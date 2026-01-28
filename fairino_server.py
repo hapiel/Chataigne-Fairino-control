@@ -90,7 +90,8 @@ def handle_servoj(addr, *args):
         # Args: j1, j2, j3, j4, j5, j6
         q = [float(x) for x in args[:6]]
         # We use keyword args to handle the axisPos [0,0,0,0] requirement
-        robot.ServoJ(joint_pos=q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.008, acc=50, vel=50)
+        # acc and vel don't work in current version of library
+        robot.ServoJ(joint_pos=q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.01, acc=50, vel=50)
     except Exception: pass
 
 def handle_servojt_start(addr):
@@ -113,21 +114,17 @@ def handle_servojt_stop(addr):
     except Exception:
         pass
 
-def handle_servojt(addr, *args):
-    try:
-        torques = [float(x) for x in args[:6]]
-        # interval: 0.001 to 0.008 (match your OSC rate)
-        robot.ServoJT(torques, 0.008)
-    except Exception:
-        pass
     
 def handle_servocart(addr, *args):
     try:
-        d_pos = [float(x) for x in args[6]]
+        
+        d_pos = [float(x) for x in args[:6]]
         # interval: 0.001 to 0.008 (match your OSC rate)
         # mode:  [0]-absolute motion (base coordinate system), [1]-incremental motion (base coordinate system), [2]-incremental motion (tool coordinate system);
-        robot.ServoCart(mode=0, desc_pos=d_pos, cmdT=0.008)
-    except Exception: pass
+        robot.ServoCart(mode=0, desc_pos=d_pos, cmdT=0.01)
+        
+    except Exception:
+        pass
 
 
 def handle_servojt(addr, *args):
@@ -164,6 +161,23 @@ def handle_resume(addr):
         print("Motion Resumed")
     else:
         print(f"ResumeMotion failed with code: {ret}")
+
+def handle_clear_error(addr):
+    ret = robot.ResetAllError()
+    if ret == 0:
+        print("Errors cleared")
+    else:
+        print(f"ClearError failed with code: {ret}")
+        
+        
+def handle_enable(addr, state):
+    try:
+        # state is 1 for ON, 0 for OFF
+        s = int(state)
+        ret = robot.RobotEnable(s)
+        print(f"Robot Enable ({s}): {ret if ret == 0 else f'FAILED ({ret})'}")
+    except Exception as e:
+        print(f"Enable Error: {e}")
 
 def handle_set_rate(addr, hz):
     global telemetry_interval
@@ -247,6 +261,8 @@ disp.map("/telemetry/hz", handle_set_rate)
 disp.map("/stop", handle_stop)
 disp.map("/pause", handle_pause)
 disp.map("/resume", handle_resume)
+disp.map("/clear_error", handle_clear_error)
+disp.map("/enable", handle_enable)
 
 # Position Servo
 disp.map("/servo/start", handle_servo_start)
