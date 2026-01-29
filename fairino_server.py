@@ -125,6 +125,17 @@ def handle_servocart(addr, *args):
         
     except Exception:
         pass
+    
+def handle_servocart_rel(addr, *args):
+    try:
+        
+        d_pos = [float(x) for x in args[:6]]
+        # interval: 0.001 to 0.008 (match your OSC rate)
+        # mode:  [0]-absolute motion (base coordinate system), [1]-incremental motion (base coordinate system), [2]-incremental motion (tool coordinate system);
+        robot.ServoCart(mode=2, desc_pos=d_pos, cmdT=0.01)
+        
+    except Exception:
+        pass
 
 
 def handle_servojt(addr, *args):
@@ -269,6 +280,7 @@ disp.map("/servo/start", handle_servo_start)
 disp.map("/servo/stop", handle_servo_stop)
 disp.map("/servoj", handle_servoj)
 disp.map("/servocart", handle_servocart)
+disp.map("/servocart_rel", handle_servocart_rel)
 
 # Torque Servo
 disp.map("/servojt/start", handle_servojt_start)
