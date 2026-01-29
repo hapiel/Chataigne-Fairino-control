@@ -1051,7 +1051,7 @@
               "shortName": "_error"
             },
             {
-              "value": 78.69734191894531,
+              "value": 78.58094024658203,
               "minValue": -180,
               "maxValue": 180,
               "default": -47.28842544555664,
@@ -1066,7 +1066,7 @@
               "shortName": "_j_pos_0"
             },
             {
-              "value": -97.44709777832031,
+              "value": -96.52878570556641,
               "controlAddress": "/_j_pos_1",
               "type": "Float",
               "niceName": "/j_pos 1",
@@ -1078,7 +1078,7 @@
               "shortName": "_j_pos_1"
             },
             {
-              "value": 114.7602767944336,
+              "value": 116.9346618652344,
               "controlAddress": "/_j_pos_2",
               "type": "Float",
               "niceName": "/j_pos 2",
@@ -1090,7 +1090,7 @@
               "shortName": "_j_pos_2"
             },
             {
-              "value": -23.40675354003906,
+              "value": -26.47378730773926,
               "controlAddress": "/_j_pos_3",
               "type": "Float",
               "niceName": "/j_pos 3",
@@ -1102,7 +1102,7 @@
               "shortName": "_j_pos_3"
             },
             {
-              "value": 89.47374725341797,
+              "value": 89.36866760253906,
               "controlAddress": "/_j_pos_4",
               "type": "Float",
               "niceName": "/j_pos 4",
@@ -1114,7 +1114,7 @@
               "shortName": "_j_pos_4"
             },
             {
-              "value": 48.05637359619141,
+              "value": 48.06812286376953,
               "controlAddress": "/_j_pos_5",
               "type": "Float",
               "niceName": "/j_pos 5",
@@ -1126,7 +1126,7 @@
               "shortName": "_j_pos_5"
             },
             {
-              "value": -0.01471999939531088,
+              "value": 0.00255999993532896,
               "controlAddress": "/_j_torq_0",
               "type": "Float",
               "niceName": "/j_torq 0",
@@ -1138,7 +1138,7 @@
               "shortName": "_j_torq_0"
             },
             {
-              "value": -0.1107200011610985,
+              "value": -0.08575999736785889,
               "controlAddress": "/_j_torq_1",
               "type": "Float",
               "niceName": "/j_torq 1",
@@ -1150,7 +1150,7 @@
               "shortName": "_j_torq_1"
             },
             {
-              "value": -0.1087999939918518,
+              "value": -0.1030399948358536,
               "controlAddress": "/_j_torq_2",
               "type": "Float",
               "niceName": "/j_torq 2",
@@ -1162,7 +1162,7 @@
               "shortName": "_j_torq_2"
             },
             {
-              "value": 0.01248000003397465,
+              "value": -0.01888000033795834,
               "controlAddress": "/_j_torq_3",
               "type": "Float",
               "niceName": "/j_torq 3",
@@ -1174,7 +1174,7 @@
               "shortName": "_j_torq_3"
             },
             {
-              "value": -0.003839999902993441,
+              "value": -0.005760000087320805,
               "controlAddress": "/_j_torq_4",
               "type": "Float",
               "niceName": "/j_torq 4",
@@ -1186,7 +1186,7 @@
               "shortName": "_j_torq_4"
             },
             {
-              "value": 0.00127999996766448,
+              "value": -0.006719999946653843,
               "controlAddress": "/_j_torq_5",
               "type": "Float",
               "niceName": "/j_torq 5",
@@ -1210,7 +1210,7 @@
               "shortName": "_ping"
             },
             {
-              "value": -4.714589595794678,
+              "value": -4.699999809265137,
               "controlAddress": "/_sens_ft_0",
               "type": "Float",
               "niceName": "/sens_ft 0",
@@ -1234,7 +1234,7 @@
               "shortName": "_sens_ft_1"
             },
             {
-              "value": -11.88541030883789,
+              "value": -11.89999961853027,
               "controlAddress": "/_sens_ft_2",
               "type": "Float",
               "niceName": "/sens_ft 2",
@@ -1258,7 +1258,7 @@
               "shortName": "_sens_ft_3"
             },
             {
-              "value": -0.1800000965595245,
+              "value": -0.1800000071525574,
               "controlAddress": "/_sens_ft_4",
               "type": "Float",
               "niceName": "/sens_ft 4",
@@ -1270,7 +1270,7 @@
               "shortName": "_sens_ft_4"
             },
             {
-              "value": -0.1800000965595245,
+              "value": -0.1800000071525574,
               "controlAddress": "/_sens_ft_5",
               "type": "Float",
               "niceName": "/sens_ft 5",
@@ -1282,7 +1282,7 @@
               "shortName": "_sens_ft_5"
             },
             {
-              "value": -17.18463516235352,
+              "value": -17.88726043701172,
               "controlAddress": "/_tcp_pos_0",
               "type": "Float",
               "niceName": "/tcp_pos 0",
@@ -1294,7 +1294,7 @@
               "shortName": "_tcp_pos_0"
             },
             {
-              "value": -604.3761596679688,
+              "value": -604.29150390625,
               "controlAddress": "/_tcp_pos_1",
               "type": "Float",
               "niceName": "/tcp_pos 1",
@@ -1306,7 +1306,7 @@
               "shortName": "_tcp_pos_1"
             },
             {
-              "value": 352.2452087402344,
+              "value": 332.8849487304688,
               "controlAddress": "/_tcp_pos_2",
               "type": "Float",
               "niceName": "/tcp_pos 2",
@@ -1318,7 +1318,7 @@
               "shortName": "_tcp_pos_2"
             },
             {
-              "value": 80.93659210205078,
+              "value": 80.97340393066406,
               "controlAddress": "/_tcp_pos_3",
               "type": "Float",
               "niceName": "/tcp_pos 3",
@@ -1330,7 +1330,7 @@
               "shortName": "_tcp_pos_3"
             },
             {
-              "value": -47.64206314086914,
+              "value": -47.64574432373047,
               "controlAddress": "/_tcp_pos_4",
               "type": "Float",
               "niceName": "/tcp_pos 4",
@@ -1342,7 +1342,7 @@
               "shortName": "_tcp_pos_4"
             },
             {
-              "value": -4.052677631378174,
+              "value": -4.088482856750488,
               "controlAddress": "/_tcp_pos_5",
               "type": "Float",
               "niceName": "/tcp_pos 5",
@@ -1470,7 +1470,7 @@
         "values": {
           "parameters": [
             {
-              "value": 0.5158439874649048,
+              "value": 0.516759991645813,
               "controlAddress": "/_nX",
               "type": "Float",
               "niceName": "/nX",
@@ -1482,7 +1482,7 @@
               "shortName": "_nX"
             },
             {
-              "value": 0.4756991267204285,
+              "value": 0.5105959177017212,
               "controlAddress": "/_nY",
               "type": "Float",
               "niceName": "/nY",
@@ -1868,7 +1868,7 @@
             {
               "parameters": [
                 {
-                  "value": -17.7095775604248,
+                  "value": -17.95902824401855,
                   "minValue": -1100.0,
                   "maxValue": 1100.0,
                   "default": 0.0,
@@ -1910,7 +1910,7 @@
             {
               "parameters": [
                 {
-                  "value": 319.4902954101562,
+                  "value": 332.7566528320312,
                   "minValue": -650.0,
                   "maxValue": 1235.0,
                   "default": 0.0,
@@ -2304,7 +2304,7 @@
             {
               "parameters": [
                 {
-                  "value": 7.9488525390625,
+                  "value": 8.223663330078125,
                   "controlAddress": "/deltaNoseX",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2322,7 +2322,7 @@
             {
               "parameters": [
                 {
-                  "value": -1.810272216796875,
+                  "value": 8.658782958984375,
                   "controlAddress": "/deltaNoseY",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2446,7 +2446,7 @@
             "controlAddress": "/color"
           },
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/active"
           },
           {
@@ -2773,7 +2773,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -17.7095775604248,
+                                "value": -17.95902824401855,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/x/x",
@@ -2785,7 +2785,7 @@
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -17.7095775604248,
+                              "value": -17.95902824401855,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/x/x",
@@ -2821,7 +2821,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 319.4902954101562,
+                                "value": 332.7566528320312,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/z/z",
@@ -2833,7 +2833,7 @@
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 319.4902954101562,
+                              "value": 332.7566528320312,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/z/z",
@@ -3367,7 +3367,7 @@
             "controlAddress": "/color"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
@@ -3556,14 +3556,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -16.76074287295341,
+                                "value": -17.86929389834404,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -16.76074287295341,
+                              "value": -17.86929389834404,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -3592,14 +3592,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 340.4329070301808,
+                                "value": 332.8847840502858,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 340.4329070301808,
+                              "value": 332.8847840502858,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -5776,7 +5776,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 78.69734191894531,
+                          "value": 78.58094024658203,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_0",
@@ -5811,7 +5811,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -97.44709777832031,
+                          "value": -96.52878570556641,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_1",
@@ -5846,7 +5846,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 114.7602767944336,
+                          "value": 116.9346618652344,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_2",
@@ -5881,7 +5881,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -23.40675354003906,
+                          "value": -26.47378730773926,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_3",
@@ -5916,7 +5916,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 89.47374725341797,
+                          "value": 89.36866760253906,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_4",
@@ -5951,7 +5951,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 48.05637359619141,
+                          "value": 48.06812286376953,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_5",
@@ -5985,7 +5985,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -17.18463516235352,
+                          "value": -17.88726043701172,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_0",
@@ -6019,7 +6019,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -604.3761596679688,
+                          "value": -604.29150390625,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_1",
@@ -6053,7 +6053,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 352.2452087402344,
+                          "value": 332.8849487304688,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_2",
@@ -6087,7 +6087,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 80.93659210205078,
+                          "value": 80.97340393066406,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_3",
@@ -6121,7 +6121,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -47.64206314086914,
+                          "value": -47.64574432373047,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_4",
@@ -6155,7 +6155,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -4.052677631378174,
+                          "value": -4.088482856750488,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_5",
@@ -7249,7 +7249,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.5158439874649048,
+                          "value": 0.516759991645813,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscMP/values/_nX",
@@ -7283,7 +7283,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.4756991267204285,
+                          "value": 0.5105959177017212,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscMP/values/_nY",
@@ -7650,14 +7650,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 78.69734191894531,
+                                "value": 78.58094024658203,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 78.69734191894531,
+                              "value": 78.58094024658203,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -7668,14 +7668,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -97.44709777832031,
+                                "value": -96.52878570556641,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -97.44709777832031,
+                              "value": -96.52878570556641,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#2/#1"
                             },
                             "paramLink": {
@@ -7686,14 +7686,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 114.7602767944336,
+                                "value": 116.9346618652344,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 114.7602767944336,
+                              "value": 116.9346618652344,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -7704,14 +7704,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -23.40675354003906,
+                                "value": -26.47378730773926,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": -23.40675354003906,
+                              "value": -26.47378730773926,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#4/#1"
                             },
                             "paramLink": {
@@ -7722,14 +7722,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 89.47374725341797,
+                                "value": 89.36866760253906,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": 89.47374725341797,
+                              "value": 89.36866760253906,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#5/#1"
                             },
                             "paramLink": {
@@ -7740,14 +7740,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 48.05637359619141,
+                                "value": 48.06812286376953,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 48.05637359619141,
+                              "value": 48.06812286376953,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#6/#1"
                             },
                             "paramLink": {
@@ -8150,7 +8150,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
