@@ -1039,7 +1039,7 @@
         "values": {
           "parameters": [
             {
-              "value": "ID: [1, 149]",
+              "value": "ID: [1, 25]",
               "controlAddress": "/_error",
               "type": "String",
               "niceName": "/error",
@@ -1051,7 +1051,7 @@
               "shortName": "_error"
             },
             {
-              "value": 80.59915161132812,
+              "value": 78.69734191894531,
               "minValue": -180,
               "maxValue": 180,
               "default": -47.28842544555664,
@@ -1066,7 +1066,7 @@
               "shortName": "_j_pos_0"
             },
             {
-              "value": -98.23847198486328,
+              "value": -97.44709777832031,
               "controlAddress": "/_j_pos_1",
               "type": "Float",
               "niceName": "/j_pos 1",
@@ -1078,7 +1078,7 @@
               "shortName": "_j_pos_1"
             },
             {
-              "value": 111.6338043212891,
+              "value": 114.7602767944336,
               "controlAddress": "/_j_pos_2",
               "type": "Float",
               "niceName": "/j_pos 2",
@@ -1090,7 +1090,7 @@
               "shortName": "_j_pos_2"
             },
             {
-              "value": -19.47299385070801,
+              "value": -23.40675354003906,
               "controlAddress": "/_j_pos_3",
               "type": "Float",
               "niceName": "/j_pos 3",
@@ -1102,7 +1102,7 @@
               "shortName": "_j_pos_3"
             },
             {
-              "value": 91.37818908691406,
+              "value": 89.47374725341797,
               "controlAddress": "/_j_pos_4",
               "type": "Float",
               "niceName": "/j_pos 4",
@@ -1114,7 +1114,7 @@
               "shortName": "_j_pos_4"
             },
             {
-              "value": 47.85927200317383,
+              "value": 48.05637359619141,
               "controlAddress": "/_j_pos_5",
               "type": "Float",
               "niceName": "/j_pos 5",
@@ -1126,7 +1126,7 @@
               "shortName": "_j_pos_5"
             },
             {
-              "value": -0.007040000054985285,
+              "value": -0.01471999939531088,
               "controlAddress": "/_j_torq_0",
               "type": "Float",
               "niceName": "/j_torq 0",
@@ -1138,7 +1138,7 @@
               "shortName": "_j_torq_0"
             },
             {
-              "value": -0.09216000139713287,
+              "value": -0.1107200011610985,
               "controlAddress": "/_j_torq_1",
               "type": "Float",
               "niceName": "/j_torq 1",
@@ -1150,7 +1150,7 @@
               "shortName": "_j_torq_1"
             },
             {
-              "value": -0.117759995162487,
+              "value": -0.1087999939918518,
               "controlAddress": "/_j_torq_2",
               "type": "Float",
               "niceName": "/j_torq 2",
@@ -1162,7 +1162,7 @@
               "shortName": "_j_torq_2"
             },
             {
-              "value": -0.0163199994713068,
+              "value": 0.01248000003397465,
               "controlAddress": "/_j_torq_3",
               "type": "Float",
               "niceName": "/j_torq 3",
@@ -1174,7 +1174,7 @@
               "shortName": "_j_torq_3"
             },
             {
-              "value": 0.005439999978989363,
+              "value": -0.003839999902993441,
               "controlAddress": "/_j_torq_4",
               "type": "Float",
               "niceName": "/j_torq 4",
@@ -1186,7 +1186,7 @@
               "shortName": "_j_torq_4"
             },
             {
-              "value": 0.010559999383986,
+              "value": 0.00127999996766448,
               "controlAddress": "/_j_torq_5",
               "type": "Float",
               "niceName": "/j_torq 5",
@@ -1210,7 +1210,7 @@
               "shortName": "_ping"
             },
             {
-              "value": -4.699999809265137,
+              "value": -4.714589595794678,
               "controlAddress": "/_sens_ft_0",
               "type": "Float",
               "niceName": "/sens_ft 0",
@@ -1234,7 +1234,7 @@
               "shortName": "_sens_ft_1"
             },
             {
-              "value": -11.89999961853027,
+              "value": -11.88541030883789,
               "controlAddress": "/_sens_ft_2",
               "type": "Float",
               "niceName": "/sens_ft 2",
@@ -1258,7 +1258,7 @@
               "shortName": "_sens_ft_3"
             },
             {
-              "value": -0.1800000071525574,
+              "value": -0.1800000965595245,
               "controlAddress": "/_sens_ft_4",
               "type": "Float",
               "niceName": "/sens_ft 4",
@@ -1270,7 +1270,7 @@
               "shortName": "_sens_ft_4"
             },
             {
-              "value": -0.1800000071525574,
+              "value": -0.1800000965595245,
               "controlAddress": "/_sens_ft_5",
               "type": "Float",
               "niceName": "/sens_ft 5",
@@ -1282,7 +1282,7 @@
               "shortName": "_sens_ft_5"
             },
             {
-              "value": -5.972634792327881,
+              "value": -17.18463516235352,
               "controlAddress": "/_tcp_pos_0",
               "type": "Float",
               "niceName": "/tcp_pos 0",
@@ -1294,7 +1294,7 @@
               "shortName": "_tcp_pos_0"
             },
             {
-              "value": -604.3087768554688,
+              "value": -604.3761596679688,
               "controlAddress": "/_tcp_pos_1",
               "type": "Float",
               "niceName": "/tcp_pos 1",
@@ -1306,7 +1306,7 @@
               "shortName": "_tcp_pos_1"
             },
             {
-              "value": 377.4741821289062,
+              "value": 352.2452087402344,
               "controlAddress": "/_tcp_pos_2",
               "type": "Float",
               "niceName": "/tcp_pos 2",
@@ -1318,7 +1318,7 @@
               "shortName": "_tcp_pos_2"
             },
             {
-              "value": 80.96022033691406,
+              "value": 80.93659210205078,
               "controlAddress": "/_tcp_pos_3",
               "type": "Float",
               "niceName": "/tcp_pos 3",
@@ -1330,7 +1330,7 @@
               "shortName": "_tcp_pos_3"
             },
             {
-              "value": -47.64969635009766,
+              "value": -47.64206314086914,
               "controlAddress": "/_tcp_pos_4",
               "type": "Float",
               "niceName": "/tcp_pos 4",
@@ -1342,7 +1342,7 @@
               "shortName": "_tcp_pos_4"
             },
             {
-              "value": -4.080860614776611,
+              "value": -4.052677631378174,
               "controlAddress": "/_tcp_pos_5",
               "type": "Float",
               "niceName": "/tcp_pos 5",
@@ -1470,7 +1470,7 @@
         "values": {
           "parameters": [
             {
-              "value": 0.5438190102577209,
+              "value": 0.5158439874649048,
               "controlAddress": "/_nX",
               "type": "Float",
               "niceName": "/nX",
@@ -1482,7 +1482,7 @@
               "shortName": "_nX"
             },
             {
-              "value": 0.4623045325279236,
+              "value": 0.4756991267204285,
               "controlAddress": "/_nY",
               "type": "Float",
               "niceName": "/nY",
@@ -1577,7 +1577,7 @@
             {
               "parameters": [
                 {
-                  "value": 77.20719146728516,
+                  "value": 80.59933471679688,
                   "minValue": -174.8999938964844,
                   "maxValue": 174.8999938964844,
                   "default": 0.0,
@@ -1598,7 +1598,7 @@
             {
               "parameters": [
                 {
-                  "value": -96.35681915283203,
+                  "value": -98.23865509033203,
                   "minValue": -264.8999938964844,
                   "maxValue": 84.90000152587891,
                   "default": 0.0,
@@ -1619,7 +1619,7 @@
             {
               "parameters": [
                 {
-                  "value": 117.5836715698242,
+                  "value": 111.6338043212891,
                   "minValue": -159.8999938964844,
                   "maxValue": 159.8999938964844,
                   "default": 0.0,
@@ -1640,7 +1640,7 @@
             {
               "parameters": [
                 {
-                  "value": -27.29808807373047,
+                  "value": -19.46407508850098,
                   "minValue": -264.8999938964844,
                   "maxValue": 84.90000152587891,
                   "default": 0.0,
@@ -1661,7 +1661,7 @@
             {
               "parameters": [
                 {
-                  "value": 88.00135803222656,
+                  "value": 91.37448883056641,
                   "minValue": -174.8999938964844,
                   "maxValue": 174.8999938964844,
                   "default": 0.0,
@@ -1682,7 +1682,7 @@
             {
               "parameters": [
                 {
-                  "value": 48.21344757080078,
+                  "value": 47.85427093505859,
                   "minValue": -359.8999938964844,
                   "maxValue": 359.8999938964844,
                   "default": 0.0,
@@ -1868,7 +1868,7 @@
             {
               "parameters": [
                 {
-                  "value": -5.952253341674805,
+                  "value": -17.7095775604248,
                   "minValue": -1100.0,
                   "maxValue": 1100.0,
                   "default": 0.0,
@@ -1889,7 +1889,7 @@
             {
               "parameters": [
                 {
-                  "value": -604.2954711914062,
+                  "value": -604.2969360351562,
                   "minValue": -1100.0,
                   "maxValue": 1100.0,
                   "default": 0.0,
@@ -1910,7 +1910,7 @@
             {
               "parameters": [
                 {
-                  "value": 377.3899841308594,
+                  "value": 319.4902954101562,
                   "minValue": -650.0,
                   "maxValue": 1235.0,
                   "default": 0.0,
@@ -1931,7 +1931,7 @@
             {
               "parameters": [
                 {
-                  "value": 80.97344207763672,
+                  "value": 80.97405242919922,
                   "minValue": -180,
                   "maxValue": 180,
                   "default": 0.0,
@@ -1952,7 +1952,7 @@
             {
               "parameters": [
                 {
-                  "value": -47.64564895629883,
+                  "value": -47.64517593383789,
                   "minValue": -180,
                   "maxValue": 180,
                   "default": 0.0,
@@ -1973,7 +1973,7 @@
             {
               "parameters": [
                 {
-                  "value": -4.087253570556641,
+                  "value": -4.087750434875488,
                   "minValue": -180,
                   "maxValue": 180,
                   "default": 0.0,
@@ -2268,7 +2268,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.4563740789890289,
+                  "value": 0.4893477857112885,
                   "controlAddress": "/noseX",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2286,7 +2286,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.2774553894996643,
+                  "value": 0.4817333221435547,
                   "controlAddress": "/noseY",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2304,7 +2304,7 @@
             {
               "parameters": [
                 {
-                  "value": 26.23345947265625,
+                  "value": 7.9488525390625,
                   "controlAddress": "/deltaNoseX",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2322,7 +2322,7 @@
             {
               "parameters": [
                 {
-                  "value": 55.45474243164062,
+                  "value": -1.810272216796875,
                   "controlAddress": "/deltaNoseY",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2334,155 +2334,6 @@
                 }
               ],
               "niceName": "delta noseY",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            }
-          ],
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "presets": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        }
-      },
-      {
-        "niceName": "Source TCP pos",
-        "type": "CVGroup",
-        "params": {
-        },
-        "variables": {
-          "editorIsCollapsed": true,
-          "items": [
-            {
-              "parameters": [
-                {
-                  "value": 0.300000011920929,
-                  "minValue": -0.699999988079071,
-                  "maxValue": 0.699999988079071,
-                  "default": 0.0,
-                  "controlAddress": "/x",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "x",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "x",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": 0.02654180303215981,
-                  "minValue": -0.699999988079071,
-                  "maxValue": 0.699999988079071,
-                  "default": 0.0,
-                  "controlAddress": "/y",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "y",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "y",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": 0.7425832152366638,
-                  "minValue": -0.1000000014901161,
-                  "maxValue": 0.8500000238418579,
-                  "default": 0.0,
-                  "controlAddress": "/z",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "z",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "z",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": -5.757908821105957,
-                  "minValue": -180,
-                  "maxValue": 180,
-                  "default": 0.0,
-                  "controlAddress": "/rx",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "rx",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "rx",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": -83.81100463867188,
-                  "minValue": -180,
-                  "maxValue": 180,
-                  "default": 0.0,
-                  "controlAddress": "/ry",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "ry",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "ry",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": -152.5766906738281,
-                  "minValue": -180,
-                  "maxValue": 180,
-                  "default": 0.0,
-                  "controlAddress": "/rz",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "rz",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "rz",
               "editorIsCollapsed": true,
               "type": "Float Parameter"
             }
@@ -2595,7 +2446,7 @@
             "controlAddress": "/color"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           },
           {
@@ -2658,7 +2509,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 77.20719146728516,
+                                "value": 80.59933471679688,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j1/j1",
@@ -2670,7 +2521,7 @@
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 77.20719146728516,
+                              "value": 80.59933471679688,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j1/j1",
@@ -2682,7 +2533,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -96.35681915283203,
+                                "value": -98.23865509033203,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j2/j2",
@@ -2694,7 +2545,7 @@
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -96.35681915283203,
+                              "value": -98.23865509033203,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j2/j2",
@@ -2706,7 +2557,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 117.5836715698242,
+                                "value": 111.6338043212891,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j3/j3",
@@ -2718,7 +2569,7 @@
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 117.5836715698242,
+                              "value": 111.6338043212891,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j3/j3",
@@ -2730,7 +2581,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -27.29808807373047,
+                                "value": -19.46407508850098,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j4/j4",
@@ -2742,7 +2593,7 @@
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": -27.29808807373047,
+                              "value": -19.46407508850098,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j4/j4",
@@ -2754,7 +2605,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 88.00135803222656,
+                                "value": 91.37448883056641,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j5/j5",
@@ -2766,7 +2617,7 @@
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": 88.00135803222656,
+                              "value": 91.37448883056641,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j5/j5",
@@ -2778,7 +2629,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 48.21344757080078,
+                                "value": 47.85427093505859,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j6/j6",
@@ -2790,7 +2641,7 @@
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 48.21344757080078,
+                              "value": 47.85427093505859,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j6/j6",
@@ -2922,7 +2773,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -5.952253341674805,
+                                "value": -17.7095775604248,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/x/x",
@@ -2934,7 +2785,7 @@
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -5.952253341674805,
+                              "value": -17.7095775604248,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/x/x",
@@ -2946,7 +2797,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -604.2954711914062,
+                                "value": -604.2969360351562,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/y/y",
@@ -2958,7 +2809,7 @@
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -604.2954711914062,
+                              "value": -604.2969360351562,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/y/y",
@@ -2970,7 +2821,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 377.3899841308594,
+                                "value": 319.4902954101562,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/z/z",
@@ -2982,7 +2833,7 @@
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 377.3899841308594,
+                              "value": 319.4902954101562,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/z/z",
@@ -2994,7 +2845,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 80.97344207763672,
+                                "value": 80.97405242919922,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/rx/rx",
@@ -3006,7 +2857,7 @@
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": 80.97344207763672,
+                              "value": 80.97405242919922,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/rx/rx",
@@ -3018,7 +2869,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -47.64564895629883,
+                                "value": -47.64517593383789,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/ry/ry",
@@ -3030,7 +2881,7 @@
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": -47.64564895629883,
+                              "value": -47.64517593383789,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/ry/ry",
@@ -3042,7 +2893,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -4.087253570556641,
+                                "value": -4.087750434875488,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetTCPPos/variables/rz/rz",
@@ -3054,7 +2905,7 @@
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": -4.087253570556641,
+                              "value": -4.087750434875488,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetTCPPos/variables/rz/rz",
@@ -3516,7 +3367,7 @@
             "controlAddress": "/color"
           },
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/active"
           }
         ],
@@ -3705,14 +3556,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -5.952253341674805,
+                                "value": -16.76074287295341,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -5.952253341674805,
+                              "value": -16.76074287295341,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -3723,14 +3574,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -604.2954711914062,
+                                "value": -604.2969360351562,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -604.2954711914062,
+                              "value": -604.2969360351562,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#2/#1"
                             },
                             "paramLink": {
@@ -3741,14 +3592,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 377.4375154614719,
+                                "value": 340.4329070301808,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 377.4375154614719,
+                              "value": 340.4329070301808,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -3759,14 +3610,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 80.97344207763672,
+                                "value": 80.97405242919922,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": 80.97344207763672,
+                              "value": 80.97405242919922,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#4/#1"
                             },
                             "paramLink": {
@@ -3777,14 +3628,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -47.64564895629883,
+                                "value": -47.64517593383789,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": -47.64564895629883,
+                              "value": -47.64517593383789,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#5/#1"
                             },
                             "paramLink": {
@@ -3795,14 +3646,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -4.087253570556641,
+                                "value": -4.087750434875488,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": -4.087253570556641,
+                              "value": -4.087750434875488,
                               "controlAddress": "/states/servoCart/processors/servoCart/outputs/mappingOutput/command/arguments/#6/#1"
                             },
                             "paramLink": {
@@ -5925,7 +5776,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 80.59915161132812,
+                          "value": 78.69734191894531,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_0",
@@ -5960,7 +5811,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -98.23847198486328,
+                          "value": -97.44709777832031,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_1",
@@ -5995,7 +5846,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 111.6338043212891,
+                          "value": 114.7602767944336,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_2",
@@ -6030,7 +5881,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -19.47299385070801,
+                          "value": -23.40675354003906,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_3",
@@ -6065,7 +5916,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 91.37818908691406,
+                          "value": 89.47374725341797,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_4",
@@ -6100,7 +5951,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 47.85927200317383,
+                          "value": 48.05637359619141,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_5",
@@ -6134,7 +5985,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -5.972634792327881,
+                          "value": -17.18463516235352,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_0",
@@ -6168,7 +6019,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -604.3087768554688,
+                          "value": -604.3761596679688,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_1",
@@ -6202,7 +6053,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 377.4741821289062,
+                          "value": 352.2452087402344,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_2",
@@ -6236,7 +6087,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 80.96022033691406,
+                          "value": 80.93659210205078,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_3",
@@ -6270,7 +6121,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -47.64969635009766,
+                          "value": -47.64206314086914,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_4",
@@ -6304,7 +6155,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -4.080860614776611,
+                          "value": -4.052677631378174,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_5",
@@ -7226,11 +7077,12 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/enabled"
                       }
                     ],
                     "niceName": "enable ServoJ",
+                    "editorIsCollapsed": true,
                     "type": "Consequence",
                     "commandModule": "stateMachine",
                     "commandPath": "Action",
@@ -7397,7 +7249,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.5438190102577209,
+                          "value": 0.5158439874649048,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscMP/values/_nX",
@@ -7431,7 +7283,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0.4623045325279236,
+                          "value": 0.4756991267204285,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscMP/values/_nY",
@@ -7798,14 +7650,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 80.59915161132812,
+                                "value": 78.69734191894531,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 80.59915161132812,
+                              "value": 78.69734191894531,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -7816,14 +7668,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -98.23847198486328,
+                                "value": -97.44709777832031,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -98.23847198486328,
+                              "value": -97.44709777832031,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#2/#1"
                             },
                             "paramLink": {
@@ -7834,14 +7686,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 111.6338043212891,
+                                "value": 114.7602767944336,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 111.6338043212891,
+                              "value": 114.7602767944336,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -7852,14 +7704,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -19.47299385070801,
+                                "value": -23.40675354003906,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": -19.47299385070801,
+                              "value": -23.40675354003906,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#4/#1"
                             },
                             "paramLink": {
@@ -7870,14 +7722,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 91.37818908691406,
+                                "value": 89.47374725341797,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": 91.37818908691406,
+                              "value": 89.47374725341797,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#5/#1"
                             },
                             "paramLink": {
@@ -7888,14 +7740,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 47.85927200317383,
+                                "value": 48.05637359619141,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 47.85927200317383,
+                              "value": 48.05637359619141,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#6/#1"
                             },
                             "paramLink": {
@@ -7940,7 +7792,7 @@
           {
             "value": [
               279.0,
-              160.0
+              115.0
             ],
             "controlAddress": "/viewUISize"
           },
@@ -7953,370 +7805,6 @@
         "type": "State",
         "processors": {
           "items": [
-            {
-              "niceName": "noseX in",
-              "editorIsCollapsed": true,
-              "type": "Mapping",
-              "im": {
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": "/modules/oscMP/values/_nX",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value",
-                    "type": "Input Value"
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": "/customVariables/customVariables/values/sourceTCPPos/x",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value 1",
-                    "type": "Input Value"
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "params": {
-                "parameters": [
-                  {
-                    "value": 50,
-                    "hexMode": false,
-                    "controlAddress": "/updateRate"
-                  }
-                ],
-                "editorIsCollapsed": true
-              },
-              "filters": {
-                "items": [
-                  {
-                    "niceName": "Remap",
-                    "type": "Remap",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/useCustomInputRange"
-                        },
-                        {
-                          "value": [
-                            0.0,
-                            1.0
-                          ],
-                          "controlAddress": "/inputMin_Max"
-                        },
-                        {
-                          "value": [
-                            -0.5,
-                            0.5
-                          ],
-                          "controlAddress": "/targetMin_Max"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    },
-                    "excludedChannels": [
-                      1
-                    ]
-                  },
-                  {
-                    "niceName": "Merge",
-                    "type": "Merge",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": "Sum",
-                          "controlAddress": "/operator"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
-                  {
-                    "niceName": "Smooth",
-                    "type": "Smooth",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": 0.928511381149292,
-                          "controlAddress": "/smoothing"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
-                  {
-                    "niceName": "Remap 1",
-                    "type": "Remap",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/useCustomInputRange"
-                        },
-                        {
-                          "value": [
-                            -0.300000011920929,
-                            0.300000011920929
-                          ],
-                          "controlAddress": "/inputMin_Max"
-                        },
-                        {
-                          "value": [
-                            -0.300000011920929,
-                            0.300000011920929
-                          ],
-                          "controlAddress": "/targetMin_Max"
-                        },
-                        {
-                          "value": false,
-                          "controlAddress": "/forceFloat"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "outputs": {
-                "items": [
-                  {
-                    "niceName": "MappingOutput",
-                    "type": "BaseItem",
-                    "commandModule": "customVariables",
-                    "commandPath": "",
-                    "commandType": "Set Value",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/sourceTCPPos/x",
-                          "controlAddress": "/target"
-                        },
-                        {
-                          "value": "All",
-                          "controlAddress": "/component"
-                        },
-                        {
-                          "value": "Equals",
-                          "controlAddress": "/operator"
-                        }
-                      ],
-                      "paramLinks": {
-                        "value": {
-                          "linkType": 1,
-                          "mappingValueIndex": 0
-                        }
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
-              "niceName": "noseY in",
-              "editorIsCollapsed": true,
-              "type": "Mapping",
-              "im": {
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": "/modules/oscMP/values/_nY",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value",
-                    "type": "Input Value"
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": "/customVariables/customVariables/values/sourceTCPPos/z",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value 1",
-                    "type": "Input Value"
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "params": {
-                "parameters": [
-                  {
-                    "value": 50,
-                    "hexMode": false,
-                    "controlAddress": "/updateRate"
-                  }
-                ],
-                "editorIsCollapsed": true
-              },
-              "filters": {
-                "items": [
-                  {
-                    "niceName": "Remap",
-                    "type": "Remap",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/useCustomInputRange"
-                        },
-                        {
-                          "value": [
-                            0.0,
-                            1.0
-                          ],
-                          "controlAddress": "/inputMin_Max"
-                        },
-                        {
-                          "value": [
-                            -0.2000000029802322,
-                            0.2000000029802322
-                          ],
-                          "controlAddress": "/targetMin_Max"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    },
-                    "excludedChannels": [
-                      1
-                    ]
-                  },
-                  {
-                    "niceName": "Merge",
-                    "type": "Merge",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": "Sum",
-                          "controlAddress": "/operator"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
-                  {
-                    "niceName": "Smooth",
-                    "type": "Smooth",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": 0.9567723274230957,
-                          "controlAddress": "/smoothing"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  },
-                  {
-                    "niceName": "Remap 1",
-                    "type": "Remap",
-                    "filterParams": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/useCustomInputRange"
-                        },
-                        {
-                          "value": [
-                            0.300000011920929,
-                            0.5
-                          ],
-                          "controlAddress": "/inputMin_Max"
-                        },
-                        {
-                          "value": [
-                            0.300000011920929,
-                            0.5
-                          ],
-                          "controlAddress": "/targetMin_Max"
-                        },
-                        {
-                          "value": false,
-                          "controlAddress": "/forceFloat"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "outputs": {
-                "items": [
-                  {
-                    "niceName": "MappingOutput",
-                    "type": "BaseItem",
-                    "commandModule": "customVariables",
-                    "commandPath": "",
-                    "commandType": "Set Value",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/sourceTCPPos/z",
-                          "controlAddress": "/target"
-                        },
-                        {
-                          "value": "All",
-                          "controlAddress": "/component"
-                        },
-                        {
-                          "value": "Equals",
-                          "controlAddress": "/operator"
-                        }
-                      ],
-                      "paramLinks": {
-                        "value": {
-                          "linkType": 1,
-                          "mappingValueIndex": 0
-                        }
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
             {
               "niceName": "noseX diff",
               "editorIsCollapsed": true,
@@ -8662,7 +8150,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/active"
           }
         ],
@@ -8896,8 +8384,8 @@
       }
     ],
     "viewOffset": [
-      203,
-      -34
+      150,
+      -320
     ],
     "viewZoom": 0.7328125238418579,
     "transitions": {
@@ -9188,8 +8676,8 @@
         }
       ],
       "viewOffset": [
-        203,
-        -34
+        150,
+        -320
       ],
       "viewZoom": 0.7328125238418579
     }
