@@ -6,9 +6,9 @@ from fairino import Robot
 import random
 
 # --- CONFIG ---
-ROBOT_IP = "192.168.58.2"
+ROBOT_IP = "192.168.57.2"
 OSC_LISTEN_PORT = 9000
-OSC_SEND_IP = "127.0.0.1" 
+OSC_SEND_IP = "192.168.57.255" 
 OSC_SEND_PORT = 8000
 
 # Global telemetry control

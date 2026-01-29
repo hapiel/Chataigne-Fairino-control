@@ -1,0 +1,119 @@
+// --- Parameters for first 3 inputs (0, 1, 2) ---
+var maxSpeedA = script.addFloatParameter(
+  "Max Speed XYZ",
+  "Maximum speed in mm/s",
+  500, 0, 1000
+);
+
+var maxAccelerationA = script.addFloatParameter(
+  "Max Accel XYZ",
+  "Maximum acceleration in mm/s²",
+  500, 0, 5000
+);
+
+// --- Parameters for the rest of the inputs ---
+var maxSpeedB = script.addFloatParameter(
+  "Max Speed Rx Ry Rz",
+  "Maximum speed in degrees/s",
+  90, 0, 360
+);
+
+var maxAccelerationB = script.addFloatParameter(
+  "Max Accel Rx Ry Rz",
+  "Maximum acceleration in degrees/s²",
+  180, 0, 2000
+);
+
+var targetDeadzone = script.addFloatParameter(
+  "Target Deadzone",
+  "Distance to target below which value is clamped",
+  0.05, 0, 1
+);
+
+var previousInputs = [];
+var velocities = [];
+var lastTime = -1;
+
+function filter(inputs, minValues, maxValues, multiplexIndex) {
+  var nowMs = util.getTime();
+  var dT;
+
+  if (lastTime < 0) {
+    dT = 1 / 50; 
+  } else {
+    dT = (nowMs - lastTime);
+    if (dT <= 0) dT = 1e-4;
+  }
+
+  // --- LARGE DT PROTECTION ---
+  if (dT > 0.5) {
+    lastTime = nowMs;
+    previousInputs = [];
+    velocities = [];
+    for (var j = 0; j < inputs.length; j++) {
+      previousInputs[j] = inputs[j];
+      velocities[j] = 0;
+    }
+    return inputs;
+  }
+
+  lastTime = nowMs;
+  var result = [];
+
+  for (var i = 0; i < inputs.length; i++) {
+    if (previousInputs.length <= i) {
+      previousInputs[i] = inputs[i];
+      velocities[i] = 0;
+    }
+
+    // --- SELECT PARAMETERS BASED ON INDEX ---
+    var currentMaxAccel, currentMaxSpeed;
+    if (i < 3) {
+      currentMaxAccel = maxAccelerationA.get();
+      currentMaxSpeed = maxSpeedA.get();
+    } else {
+      currentMaxAccel = maxAccelerationB.get();
+      currentMaxSpeed = maxSpeedB.get();
+    }
+
+    var pos = previousInputs[i];
+    var vel = velocities[i];
+    var target = inputs[i];
+    var distance = target - pos;
+
+    // --- DEADZONE NEAR TARGET ---
+    if (Math.abs(distance) <= targetDeadzone.get()) {
+      pos = target;
+      vel = 0;
+      result[i] = pos;
+      previousInputs[i] = pos;
+      velocities[i] = vel;
+      continue;
+    }
+
+    // --- MAX SAFE VELOCITY TO STOP AT TARGET ---
+    var vMax = Math.sqrt(2 * currentMaxAccel * Math.abs(distance));
+    if (distance < 0) vMax = -vMax;
+
+    // Compute dv and clamp by maxAcceleration
+    var dv = vMax - vel;
+    var maxDv = currentMaxAccel * dT;
+    if (dv > maxDv) dv = maxDv;
+    else if (dv < -maxDv) dv = -maxDv;
+
+    vel += dv;
+
+    // Clamp velocity to maxSpeed
+    if (vel > currentMaxSpeed) vel = currentMaxSpeed;
+    else if (vel < -currentMaxSpeed) vel = -currentMaxSpeed;
+
+    // Integrate position
+    pos += vel * dT;
+
+    result[i] = pos;
+    previousInputs[i] = pos;
+    velocities[i] = vel;
+  }
+
+  return result;
+}
