@@ -5780,7 +5780,7 @@
       {
         "parameters": [
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/enabled"
           }
         ],
@@ -5859,7 +5859,7 @@
               "shortName": "_error"
             },
             {
-              "value": -25.37751007080078,
+              "value": 2.624370574951172,
               "minValue": -175.0,
               "maxValue": 175.0,
               "default": -47.28842544555664,
@@ -5874,7 +5874,7 @@
               "shortName": "_j_pos_0"
             },
             {
-              "value": -37.53456115722656,
+              "value": -101.5759582519531,
               "minValue": -265.0,
               "maxValue": 85.0,
               "default": 0.0,
@@ -5889,7 +5889,7 @@
               "shortName": "_j_pos_1"
             },
             {
-              "value": -34.79778671264648,
+              "value": 128.6224822998047,
               "minValue": -160.0,
               "maxValue": 160.0,
               "default": 0.0,
@@ -5904,7 +5904,7 @@
               "shortName": "_j_pos_2"
             },
             {
-              "value": -103.2408065795898,
+              "value": -3.569360017776489,
               "minValue": -265.0,
               "maxValue": 85.0,
               "default": 0.0,
@@ -5919,7 +5919,7 @@
               "shortName": "_j_pos_3"
             },
             {
-              "value": -5.638923168182373,
+              "value": 46.59660720825195,
               "minValue": -175.0,
               "maxValue": 175.0,
               "default": 0.0,
@@ -5934,7 +5934,7 @@
               "shortName": "_j_pos_4"
             },
             {
-              "value": 216.2814178466797,
+              "value": 58.48968887329102,
               "minValue": -360.0,
               "maxValue": 360.0,
               "default": 0.0,
@@ -5949,7 +5949,7 @@
               "shortName": "_j_pos_5"
             },
             {
-              "value": -0.007679999805986881,
+              "value": 0.01087999995797873,
               "controlAddress": "/_j_torq_0",
               "type": "Float",
               "niceName": "/j_torq 0",
@@ -5961,7 +5961,7 @@
               "shortName": "_j_torq_0"
             },
             {
-              "value": -0.1849599927663803,
+              "value": -0.0652799978852272,
               "controlAddress": "/_j_torq_1",
               "type": "Float",
               "niceName": "/j_torq 1",
@@ -5973,7 +5973,7 @@
               "shortName": "_j_torq_1"
             },
             {
-              "value": -0.03071999922394753,
+              "value": -0.09216000139713287,
               "controlAddress": "/_j_torq_2",
               "type": "Float",
               "niceName": "/j_torq 2",
@@ -5985,7 +5985,7 @@
               "shortName": "_j_torq_2"
             },
             {
-              "value": 0.0,
+              "value": 0.00863999966531992,
               "controlAddress": "/_j_torq_3",
               "type": "Float",
               "niceName": "/j_torq 3",
@@ -6009,7 +6009,7 @@
               "shortName": "_j_torq_4"
             },
             {
-              "value": -0.0009599999757483602,
+              "value": -0.003199999919161201,
               "controlAddress": "/_j_torq_5",
               "type": "Float",
               "niceName": "/j_torq 5",
@@ -6033,7 +6033,7 @@
               "shortName": "_ping"
             },
             {
-              "value": -6.5,
+              "value": -7.300000190734863,
               "controlAddress": "/_sens_ft_0",
               "type": "Float",
               "niceName": "/sens_ft 0",
@@ -6045,7 +6045,7 @@
               "shortName": "_sens_ft_0"
             },
             {
-              "value": 2.799999952316284,
+              "value": 4.099999904632568,
               "controlAddress": "/_sens_ft_1",
               "type": "Float",
               "niceName": "/sens_ft 1",
@@ -6057,7 +6057,7 @@
               "shortName": "_sens_ft_1"
             },
             {
-              "value": -42.09999847412109,
+              "value": -41.29999923706055,
               "controlAddress": "/_sens_ft_2",
               "type": "Float",
               "niceName": "/sens_ft 2",
@@ -6069,7 +6069,7 @@
               "shortName": "_sens_ft_2"
             },
             {
-              "value": -0.1000000014901161,
+              "value": -0.1800000071525574,
               "controlAddress": "/_sens_ft_3",
               "type": "Float",
               "niceName": "/sens_ft 3",
@@ -6081,7 +6081,7 @@
               "shortName": "_sens_ft_3"
             },
             {
-              "value": -0.01999999955296516,
+              "value": -0.05999999865889549,
               "controlAddress": "/_sens_ft_4",
               "type": "Float",
               "niceName": "/sens_ft 4",
@@ -6093,7 +6093,7 @@
               "shortName": "_sens_ft_4"
             },
             {
-              "value": -0.01999999955296516,
+              "value": -0.05999999865889549,
               "controlAddress": "/_sens_ft_5",
               "type": "Float",
               "niceName": "/sens_ft 5",
@@ -6105,7 +6105,7 @@
               "shortName": "_sens_ft_5"
             },
             {
-              "value": -603.696044921875,
+              "value": -379.4890747070312,
               "minValue": -1100.0,
               "maxValue": 1100.0,
               "default": 0.0,
@@ -6120,7 +6120,7 @@
               "shortName": "_tcp_pos_0"
             },
             {
-              "value": -115.4906539916992,
+              "value": -300.853759765625,
               "minValue": -1100.0,
               "maxValue": 1100.0,
               "default": 0.0,
@@ -6135,7 +6135,7 @@
               "shortName": "_tcp_pos_1"
             },
             {
-              "value": 857.0982666015625,
+              "value": 190.5131530761719,
               "minValue": -650.0,
               "maxValue": 1235.0,
               "default": 0.0,
@@ -6150,7 +6150,7 @@
               "shortName": "_tcp_pos_2"
             },
             {
-              "value": 90.57305908203125,
+              "value": 139.6371002197266,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6165,7 +6165,7 @@
               "shortName": "_tcp_pos_3"
             },
             {
-              "value": -40.68551254272461,
+              "value": -67.67483520507812,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6180,7 +6180,7 @@
               "shortName": "_tcp_pos_4"
             },
             {
-              "value": -31.3733081817627,
+              "value": -88.92024993896484,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6572,7 +6572,7 @@
                   "controlAddress": "/oneNoteOn"
                 },
                 {
-                  "value": 95,
+                  "value": 72,
                   "hexMode": false,
                   "controlAddress": "/lastPitch"
                 },
@@ -6734,7 +6734,7 @@
                       "controlAddress": "/faderName"
                     },
                     {
-                      "value": 0.2061050061050061,
+                      "value": 0.3184371184371184,
                       "controlAddress": "/faderValue"
                     }
                   ],
@@ -6755,7 +6755,7 @@
                       "controlAddress": "/faderName"
                     },
                     {
-                      "value": 0.1714285714285714,
+                      "value": 1.0,
                       "controlAddress": "/faderValue"
                     }
                   ],
@@ -8001,7 +8001,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 3376,
+              "value": 5216,
               "minValue": 0,
               "maxValue": 16383,
               "default": 0,
@@ -8019,7 +8019,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 2808,
+              "value": 16380,
               "minValue": 0,
               "maxValue": 16383,
               "default": 0,
@@ -8063,7 +8063,7 @@
                   "controlAddress": "/oneNoteOn"
                 },
                 {
-                  "value": 95,
+                  "value": 72,
                   "hexMode": false,
                   "controlAddress": "/lastPitch"
                 },
@@ -8100,7 +8100,7 @@
             {
               "parameters": [
                 {
-                  "value": -5.680567264556885,
+                  "value": -1.77851402759552,
                   "minValue": -174.8999938964844,
                   "maxValue": 174.8999938964844,
                   "default": 0.0,
@@ -8121,7 +8121,7 @@
             {
               "parameters": [
                 {
-                  "value": -72.67465209960938,
+                  "value": -49.87702178955078,
                   "minValue": -264.8999938964844,
                   "maxValue": 84.90000152587891,
                   "default": 0.0,
@@ -8142,7 +8142,7 @@
             {
               "parameters": [
                 {
-                  "value": 60.82902908325195,
+                  "value": 66.98609161376953,
                   "minValue": -159.8999938964844,
                   "maxValue": 159.8999938964844,
                   "default": 0.0,
@@ -8163,7 +8163,7 @@
             {
               "parameters": [
                 {
-                  "value": 4.714766502380371,
+                  "value": -4.618608951568604,
                   "minValue": -264.8999938964844,
                   "maxValue": 84.90000152587891,
                   "default": 0.0,
@@ -8184,7 +8184,7 @@
             {
               "parameters": [
                 {
-                  "value": 50.97003555297852,
+                  "value": 51.05640411376953,
                   "minValue": -174.8999938964844,
                   "maxValue": 174.8999938964844,
                   "default": 0.0,
@@ -8205,7 +8205,7 @@
             {
               "parameters": [
                 {
-                  "value": 58.53102111816406,
+                  "value": 58.50578689575195,
                   "minValue": -359.8999938964844,
                   "maxValue": 359.8999938964844,
                   "default": 0.0,
@@ -11260,6 +11260,70 @@
           ],
           "viewZoom": 1.0
         }
+      },
+      {
+        "niceName": "Move speeds",
+        "type": "CVGroup",
+        "params": {
+        },
+        "variables": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 31.85052871704102,
+                  "minValue": 0.0,
+                  "maxValue": 100.0,
+                  "default": 0.0,
+                  "controlAddress": "/moveJSpeed",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "MoveJ speed",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "MoveJ speed",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 100.0,
+                  "minValue": 0.0,
+                  "maxValue": 100.0,
+                  "default": 0.0,
+                  "controlAddress": "/moveJAcc",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "MoveJ acc",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "MoveJ acc",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "presets": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
       }
     ],
     "viewOffset": [
@@ -11372,6 +11436,12 @@
         "processors": {
           "items": [
             {
+              "parameters": [
+                {
+                  "value": true,
+                  "controlAddress": "/enabled"
+                }
+              ],
               "niceName": "MoveJ",
               "editorIsCollapsed": true,
               "type": "Action",
@@ -11397,11 +11467,11 @@
               "consequences": {
                 "parameters": [
                   {
-                    "value": 0.02999999932944775,
+                    "value": 0.05000000074505806,
                     "controlAddress": "/stagger"
                   },
                   {
-                    "value": false,
+                    "value": true,
                     "controlAddress": "/cancelDelaysOnTrigger"
                   }
                 ],
@@ -11414,6 +11484,30 @@
                       }
                     ],
                     "niceName": "Consequence 1",
+                    "editorIsCollapsed": true,
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mainControl/processors/pause",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Consequence 2",
                     "type": "Consequence",
                     "commandModule": "stateMachine",
                     "commandPath": "Action",
@@ -11449,7 +11543,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -5.680567264556885,
+                                "value": -1.77851402759552,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j1/j1",
@@ -11461,7 +11555,7 @@
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -5.680567264556885,
+                              "value": -1.77851402759552,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j1/j1",
@@ -11473,7 +11567,7 @@
                           {
                             "parameters": [
                               {
-                                "value": -72.67465209960938,
+                                "value": -49.87702178955078,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j2/j2",
@@ -11485,7 +11579,7 @@
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -72.67465209960938,
+                              "value": -49.87702178955078,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j2/j2",
@@ -11497,7 +11591,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 60.82902908325195,
+                                "value": 66.98609161376953,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j3/j3",
@@ -11509,7 +11603,7 @@
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": 60.82902908325195,
+                              "value": 66.98609161376953,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j3/j3",
@@ -11521,7 +11615,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 4.714766502380371,
+                                "value": -4.618608951568604,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j4/j4",
@@ -11533,7 +11627,7 @@
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": 4.714766502380371,
+                              "value": -4.618608951568604,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j4/j4",
@@ -11545,7 +11639,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 50.97003555297852,
+                                "value": 51.05640411376953,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j5/j5",
@@ -11557,7 +11651,7 @@
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": 50.97003555297852,
+                              "value": 51.05640411376953,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j5/j5",
@@ -11569,7 +11663,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 58.53102111816406,
+                                "value": 58.50578689575195,
                                 "controlMode": 2,
                                 "reference": {
                                   "value": "/customVariables/targetJointAngles/variables/j6/j6",
@@ -11581,7 +11675,7 @@
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 58.53102111816406,
+                              "value": 58.50578689575195,
                               "controlMode": 2,
                               "reference": {
                                 "value": "/customVariables/targetJointAngles/variables/j6/j6",
@@ -11593,10 +11687,10 @@
                           {
                             "parameters": [
                               {
-                                "value": 44.01048278808594,
+                                "value": 31.85052871704102,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/customVariables/targetJointAngles/variables/moveJSpeed/moveJSpeed",
+                                  "value": "/customVariables/moveSpeeds/variables/moveJSpeed/moveJSpeed",
                                   "controlAddress": "/reference"
                                 },
                                 "controlAddress": "/#1"
@@ -11605,10 +11699,10 @@
                             "niceName": "speed",
                             "type": "Float",
                             "param": {
-                              "value": 44.01048278808594,
+                              "value": 31.85052871704102,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/customVariables/targetJointAngles/variables/moveJSpeed/moveJSpeed",
+                                "value": "/customVariables/moveSpeeds/variables/moveJSpeed/moveJSpeed",
                                 "controlAddress": "/reference"
                               },
                               "controlAddress": "/states/move/processors/moveJ/consequencesTRUE/consequence/command/arguments/speed/#1"
@@ -11617,10 +11711,10 @@
                           {
                             "parameters": [
                               {
-                                "value": 15.51516532897949,
+                                "value": 100.0,
                                 "controlMode": 2,
                                 "reference": {
-                                  "value": "/customVariables/targetJointAngles/variables/moveJAcceleration/moveJAcceleration",
+                                  "value": "/customVariables/moveSpeeds/variables/moveJAcc/moveJAcc",
                                   "controlAddress": "/reference"
                                 },
                                 "controlAddress": "/#1"
@@ -11629,10 +11723,10 @@
                             "niceName": "accell",
                             "type": "Float",
                             "param": {
-                              "value": 15.51516532897949,
+                              "value": 100.0,
                               "controlMode": 2,
                               "reference": {
-                                "value": "/customVariables/targetJointAngles/variables/moveJAcceleration/moveJAcceleration",
+                                "value": "/customVariables/moveSpeeds/variables/moveJAcc/moveJAcc",
                                 "controlAddress": "/reference"
                               },
                               "controlAddress": "/states/move/processors/moveJ/consequencesTRUE/consequence/command/arguments/accell/#1"
@@ -11644,6 +11738,30 @@
                           0
                         ],
                         "viewZoom": 1.0
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Consequence 3",
+                    "editorIsCollapsed": true,
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mainControl/processors/resume",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
                       }
                     }
                   }
@@ -14751,7 +14869,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -25.37751007080078,
+                          "value": 2.624370574951172,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_0",
@@ -14786,7 +14904,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -37.53456115722656,
+                          "value": -101.5759582519531,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_1",
@@ -14821,7 +14939,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -34.79778671264648,
+                          "value": 128.6224822998047,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_2",
@@ -14856,7 +14974,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -103.2408065795898,
+                          "value": -3.569360017776489,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_3",
@@ -14891,7 +15009,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -5.638923168182373,
+                          "value": 46.59660720825195,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_4",
@@ -14926,7 +15044,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 216.2814178466797,
+                          "value": 58.48968887329102,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_5",
@@ -14960,7 +15078,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -603.696044921875,
+                          "value": -379.4890747070312,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_0",
@@ -14994,7 +15112,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -115.4906539916992,
+                          "value": -300.853759765625,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_1",
@@ -15028,7 +15146,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 857.0982666015625,
+                          "value": 190.5131530761719,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_2",
@@ -15062,7 +15180,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 90.57305908203125,
+                          "value": 139.6371002197266,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_3",
@@ -15096,7 +15214,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -40.68551254272461,
+                          "value": -67.67483520507812,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_4",
@@ -15130,7 +15248,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -31.3733081817627,
+                          "value": -88.92024993896484,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_5",
@@ -16933,14 +17051,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -25.37751007080078,
+                                "value": 2.624370574951172,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": -25.37751007080078,
+                              "value": 2.624370574951172,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -16951,14 +17069,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -37.53456115722656,
+                                "value": -101.5759582519531,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -37.53456115722656,
+                              "value": -101.5759582519531,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#2/#1"
                             },
                             "paramLink": {
@@ -16969,14 +17087,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -34.79778671264648,
+                                "value": 128.6224822998047,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": -34.79778671264648,
+                              "value": 128.6224822998047,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -16987,14 +17105,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -103.2408065795898,
+                                "value": -3.569360017776489,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": -103.2408065795898,
+                              "value": -3.569360017776489,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#4/#1"
                             },
                             "paramLink": {
@@ -17005,14 +17123,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -5.638923168182373,
+                                "value": 46.59660720825195,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": -5.638923168182373,
+                              "value": 46.59660720825195,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#5/#1"
                             },
                             "paramLink": {
@@ -17023,14 +17141,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 216.2814178466797,
+                                "value": 58.48968887329102,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 216.2814178466797,
+                              "value": 58.48968887329102,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#6/#1"
                             },
                             "paramLink": {
@@ -18406,7 +18524,7 @@
             {
               "parameters": [
                 {
-                  "value": false,
+                  "value": true,
                   "controlAddress": "/enabled"
                 }
               ],
@@ -18926,6 +19044,64 @@
                       "parameters": [
                         {
                           "value": "/targetJointAngles/moveJAcceleration",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 7
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Move speeds",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/moveSpeeds/moveJSpeed",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 6
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Move speeds 1",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/moveSpeeds/moveJAcc",
                           "controlAddress": "/target"
                         },
                         {
@@ -25355,7 +25531,7 @@
           {
             "value": [
               320.0,
-              160.0
+              208.0
             ],
             "controlAddress": "/viewUISize"
           },
@@ -25494,6 +25670,215 @@
                     }
                   }
                 ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ],
+              "niceName": "Point speed = moveJ speed",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/targetJointAngles/moveJSpeed",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/targetJointAngles/moveJAcceleration",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/sendOnActivate"
+                  }
+                ]
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/moveSpeeds/moveJSpeed",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/moveSpeeds/moveJAcc",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 1
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "hard moveJ overrwite",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "softer moveJ overrwite",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
                 "viewOffset": [
                   0,
                   0
@@ -27420,6 +27805,12 @@
               }
             },
             {
+              "parameters": [
+                {
+                  "value": true,
+                  "controlAddress": "/enabled"
+                }
+              ],
               "niceName": "Play p 1",
               "editorIsCollapsed": true,
               "type": "Action",
@@ -29109,8 +29500,8 @@
       }
     ],
     "viewOffset": [
-      59,
-      525
+      102,
+      -6
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -29453,8 +29844,8 @@
         }
       ],
       "viewOffset": [
-        59,
-        525
+        102,
+        -6
       ],
       "viewZoom": 1.0
     }
