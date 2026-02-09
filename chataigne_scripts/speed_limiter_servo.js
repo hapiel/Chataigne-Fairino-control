@@ -7,7 +7,7 @@ var maxSpeed = script.addFloatParameter(
 var maxAcceleration = script.addFloatParameter(
 	"max Acceleration",
 	"maximum acceleration in degrees /s^2",
-	360, 0, 2000
+	360, 0, 8000
 );
 
 // NEW: small distance threshold to clamp to target
@@ -34,23 +34,23 @@ function filter(inputs, minValues, maxValues, multiplexIndex) {
 
 	// --- LARGE DT PROTECTION ---
 	if (dT > 0.5) {
-    lastTime = nowMs;
+		lastTime = nowMs;
 
-    // copy inputs to previousInputs
-    previousInputs = [];
-    velocities = [];
-    for (var j = 0; j < inputs.length; j++) {
-        previousInputs[j] = inputs[j];
-        velocities[j] = 0;
-    }
+		// copy inputs to previousInputs
+		previousInputs = [];
+		velocities = [];
+		for (var j = 0; j < inputs.length; j++) {
+			previousInputs[j] = inputs[j];
+			velocities[j] = 0;
+		}
 
-    // return inputs directly
-    var result = [];
-    for (var j = 0; j < inputs.length; j++) {
-        result[j] = inputs[j];
-    }
-    return result;
-}
+		// return inputs directly
+		var result = [];
+		for (var j = 0; j < inputs.length; j++) {
+			result[j] = inputs[j];
+		}
+		return result;
+	}
 
 	lastTime = nowMs;
 	var result = [];
