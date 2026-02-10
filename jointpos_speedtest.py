@@ -32,7 +32,6 @@ while True:
         total_reads += 1
 
         if ret == 0 and isinstance(joints, list) and len(joints) >= 6:
-            # print(joints)
 
             # Ignore samples where joint 1, 2, or 3 is exactly 0.0
             if joints[0] != 0.0 and joints[1] != 0.0 and joints[2] != 0.0:

@@ -3,6 +3,8 @@ from pythonosc.osc_server import ThreadingOSCUDPServer
 import threading
 import time
 from fairino import Robot
+import socket
+import struct
 import random
 
 # --- CONFIG ---
@@ -12,7 +14,7 @@ OSC_SEND_IP = "192.168.57.255"
 OSC_SEND_PORT = 8000
 
 # Global telemetry control
-telemetry_hz = 100.0  # Default 20 updates per second
+telemetry_hz = 125.0  # Default 20 updates per second
 telemetry_interval = 1.0 / telemetry_hz 
 
 # --- INIT ROBOT ---
@@ -196,69 +198,133 @@ def handle_set_rate(addr, hz):
     safe_hz = max(0.1, min(hz, 1000)) 
     telemetry_interval = 1.0 / safe_hz
     print(f"Telemetry rate set to {safe_hz}Hz ({telemetry_interval:.4f}s)")
+    
+
+class UniqueUpdateTracker:
+    def __init__(self, report_interval=1.0):
+        self.report_interval = report_interval
+        self.last_report_time = time.perf_counter()
+        self.last_joints = None
+        self.unique_updates = 0
+        self.total_reads = 0
+
+    def update(self, current_joints):
+        now = time.perf_counter()
+        self.total_reads += 1
+        
+        # Check if joints have changed
+        if self.last_joints is None or current_joints != self.last_joints:
+            self.unique_updates += 1
+            self.last_joints = current_joints.copy()
+
+        # Periodic Report
+        if now - self.last_report_time >= self.report_interval:
+            elapsed = now - self.last_report_time
+            rate = self.unique_updates / elapsed
+            print(f"[Stats] Reads: {self.total_reads} | Unique: {self.unique_updates} | Rate: {rate:.2f} Hz")
+            
+            # Reset
+            self.total_reads = 0
+            self.unique_updates = 0
+            self.last_report_time = now
+
+
 
 # --- TELEMETRY LOOP ---
 def telemetry_loop(osc_client):
-    global telemetry_interval
+    ROBOT_IP = "192.168.57.2"
+    PORT = 8083
     
-    # Track the last known good positions to prevent "zero-flicker"
-    last_valid_joints = [0.0] * 6 
+    # Initialize the tracker
+    stats_tracker = UniqueUpdateTracker(report_interval=1.0)
     
-    # Initialize the next tick time
-    next_tick = time.perf_counter()
-    
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        sock.connect((ROBOT_IP, PORT))
+        print("Connected to Fairino High-Speed Stream (8083)")
+    except Exception as e:
+        print(f"Failed to connect to 8083: {e}")
+        return
+
+    buffer = b""
+
     while True:
-        now = time.perf_counter()
-        
-        if now >= next_tick:
-            try:
-                # 1. Get raw data from robot
-                ret_j, raw_joints = robot.GetActualJointPosDegree()
-                ret_t, torques = robot.GetJointTorques()
-                ret_f, ext_force = robot.FT_GetForceTorqueOrigin()
-                ret_t, tool_pos = robot.GetActualTCPPose()
-                _, err_code = robot.GetRobotErrorCode()
+        try:
+            # Receive data chunk
+            chunk = sock.recv(2048)
+            if not chunk:
+                break
+            
+            buffer += chunk
 
-                # 2. Filter Joint Data
-                # If the return code is successful (usually 0) and we have data
-                if ret_j == 0 and isinstance(raw_joints, list) and len(raw_joints) >= 6:
-                    processed_joints = []
-                    for i in range(6):
-                        # Check if the value is 0.000
-                        if raw_joints[i] == 0.0:
-                            processed_joints.append(last_valid_joints[i])
-                        else:
-                            processed_joints.append(raw_joints[i])
-                    
-                    # Update our persistent storage
-                    last_valid_joints = processed_joints
-                else:
-                    # If the RPC call failed entirely, use the last good set
-                    processed_joints = last_valid_joints
-
-                # 3. Send OSC messages
-                if err_code != [0, 0]:
-                    osc_client.send_message("/error", f"ID: {err_code}")
-                    # print(f"Robot Error Code: {err_code}")
-
-                # Send the "cleaned" joints
-                osc_client.send_message("/j_pos", processed_joints)
+            # Process all complete frames in the buffer
+            while len(buffer) >= 2:
+                # Find the 0x5A5A header
+                header_idx = buffer.find(b'\x5a\x5a')
                 
+                if header_idx == -1:
+                    # No header found, keep the last byte in case it's part of a header
+                    buffer = buffer[-1:]
+                    break
                 
-                osc_client.send_message("/tcp_pos", tool_pos)
-                osc_client.send_message("/j_torq", torques)
-                osc_client.send_message("/sens_ft", ext_force)
-                
-            except Exception as e:
-                print(f"Robot Communication Error: {e}")
+                # If we found a header, discard everything before it
+                if header_idx > 0:
+                    buffer = buffer[header_idx:]
 
-            # 4. Schedule next tick
-            next_tick += telemetry_interval
-            if next_tick < now:
-                next_tick = now + telemetry_interval
-        
-        else:
-            time.sleep(0.001)
+                # Check if we have enough data for a full header + count + length (5 bytes)
+                if len(buffer) < 5:
+                    break
+
+                # Read the data length from the packet (Offset 3, uint16)
+                data_len = struct.unpack_from('<H', buffer, 3)[0]
+                total_packet_size = 5 + data_len + 2 # Header(5) + Data + Checksum(2)
+
+                # Wait until the full packet is in the buffer
+                if len(buffer) < total_packet_size:
+                    break
+
+                # Extract the full packet
+                packet = buffer[:total_packet_size]
+                buffer = buffer[total_packet_size:]
+
+                # --- UNPACK DATA ---
+                
+                base_error = struct.unpack_from('<B', packet, 6)[0]
+                
+                # Offset 8: Start of jt_cur_pos[0] (6 joints * 8 bytes)
+                joints = struct.unpack_from('<6d', packet, 8)
+                
+                # Offset 56: (8 meta + 48 joints)
+                tcp_pose = struct.unpack_from('<6d', packet, 56)
+
+                # Offset 108: (Skip toolNum int4)
+                torques = struct.unpack_from('<6d', packet, 108)
+                
+                # Offset 188: Force/Torque Sensor (6 * 8 bytes)
+                # (Serial 32 in manual)
+                ft_sensor = struct.unpack_from('<6d', packet, 184)
+
+                # --- UPDATE STATS ---
+                stats_tracker.update(list(joints))
+
+                # --- SEND OSC ---
+                osc_client.send_message("/j_pos", list(joints))
+                osc_client.send_message("/tcp_pos", list(tcp_pose))
+                osc_client.send_message("/j_torq", list(torques))
+                osc_client.send_message("/ft_sens", list(ft_sensor))
+                
+                # Offset 314: Fault Codes (Serial 67/68)
+                # We calculate this based on the Serial 67 position in the table
+                # Note: These are often 'int32' (4 bytes)
+                main_err = struct.unpack_from('<i', packet, 314)[0]
+                sub_err = struct.unpack_from('<i', packet, 318)[0]
+                
+                if base_error != 0 or main_err != 0:
+                    osc_client.send_message("/error", [base_error, main_err, sub_err])
+
+        except Exception as e:
+            print(f"Stream Parse Error: {e}")
+            break
 
 # --- SERVER START ---
 disp = dispatcher.Dispatcher()
