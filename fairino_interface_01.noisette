@@ -5738,32 +5738,57 @@
   "layout": {
     "mainLayout": {
       "type": 1,
+<<<<<<< HEAD
       "width": 1426,
       "height": 817,
+=======
+      "width": 738,
+      "height": 876,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
       "direction": 2,
       "shifters": [
         {
           "type": 1,
+<<<<<<< HEAD
           "width": 1426,
           "height": 817,
+=======
+          "width": 738,
+          "height": 876,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
           "direction": 2,
           "shifters": [
             {
               "type": 1,
+<<<<<<< HEAD
               "width": 1426,
               "height": 522,
+=======
+              "width": 738,
+              "height": 552,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
+<<<<<<< HEAD
                   "width": 291,
                   "height": 522,
+=======
+                  "width": 172,
+                  "height": 552,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
+<<<<<<< HEAD
                       "width": 291,
                       "height": 202,
+=======
+                      "width": 172,
+                      "height": 255,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -5773,8 +5798,13 @@
                     },
                     {
                       "type": 0,
+<<<<<<< HEAD
                       "width": 291,
                       "height": 313,
+=======
+                      "width": 172,
+                      "height": 290,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -5786,8 +5816,13 @@
                 },
                 {
                   "type": 0,
+<<<<<<< HEAD
                   "width": 571,
                   "height": 522,
+=======
+                  "width": 219,
+                  "height": 552,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -5806,8 +5841,13 @@
                 },
                 {
                   "type": 0,
+<<<<<<< HEAD
                   "width": 552,
                   "height": 522,
+=======
+                  "width": 335,
+                  "height": 552,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -5819,14 +5859,23 @@
             },
             {
               "type": 1,
+<<<<<<< HEAD
               "width": 1426,
               "height": 288,
+=======
+              "width": 738,
+              "height": 318,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 266,
+<<<<<<< HEAD
                   "height": 288,
+=======
+                  "height": 318,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -5836,8 +5885,13 @@
                 },
                 {
                   "type": 0,
+<<<<<<< HEAD
                   "width": 572,
                   "height": 288,
+=======
+                  "width": 150,
+                  "height": 318,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -5847,8 +5901,13 @@
                 },
                 {
                   "type": 0,
+<<<<<<< HEAD
                   "width": 576,
                   "height": 288,
+=======
+                  "width": 310,
+                  "height": 318,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -5873,6 +5932,15 @@
   "modules": {
     "items": [
       {
+<<<<<<< HEAD
+=======
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "OSC python server",
         "type": "OSC",
         "scripts": {
@@ -5968,7 +6036,7 @@
               "shortName": "_error"
             },
             {
-              "value": 29.30825424194336,
+              "value": 49.48296737670898,
               "minValue": -175.0,
               "maxValue": 175.0,
               "default": -47.28842544555664,
@@ -5983,7 +6051,7 @@
               "shortName": "_j_pos_0"
             },
             {
-              "value": -70.44288635253906,
+              "value": -82.25999450683594,
               "minValue": -265.0,
               "maxValue": 85.0,
               "default": 0.0,
@@ -5998,7 +6066,7 @@
               "shortName": "_j_pos_1"
             },
             {
-              "value": -108.2567367553711,
+              "value": -98.98826599121094,
               "minValue": -160.0,
               "maxValue": 160.0,
               "default": 0.0,
@@ -6013,7 +6081,7 @@
               "shortName": "_j_pos_2"
             },
             {
-              "value": -25.14629173278809,
+              "value": -84.42459869384766,
               "minValue": -265.0,
               "maxValue": 85.0,
               "default": 0.0,
@@ -6028,7 +6096,7 @@
               "shortName": "_j_pos_3"
             },
             {
-              "value": 142.3521423339844,
+              "value": -91.10276794433594,
               "minValue": -175.0,
               "maxValue": 175.0,
               "default": 0.0,
@@ -6043,7 +6111,7 @@
               "shortName": "_j_pos_4"
             },
             {
-              "value": 107.5474472045898,
+              "value": 50.95763397216797,
               "minValue": -360.0,
               "maxValue": 360.0,
               "default": 0.0,
@@ -6058,7 +6126,7 @@
               "shortName": "_j_pos_5"
             },
             {
-              "value": 24.0,
+              "value": -33.0,
               "controlAddress": "/_j_torq_0",
               "type": "Float",
               "niceName": "/j_torq 0",
@@ -6070,7 +6138,7 @@
               "shortName": "_j_torq_0"
             },
             {
-              "value": -65.0,
+              "value": 157.0,
               "controlAddress": "/_j_torq_1",
               "type": "Float",
               "niceName": "/j_torq 1",
@@ -6082,7 +6150,7 @@
               "shortName": "_j_torq_1"
             },
             {
-              "value": -134.0,
+              "value": 191.0,
               "controlAddress": "/_j_torq_2",
               "type": "Float",
               "niceName": "/j_torq 2",
@@ -6094,7 +6162,7 @@
               "shortName": "_j_torq_2"
             },
             {
-              "value": -2.559999942779541,
+              "value": 13.4399995803833,
               "controlAddress": "/_j_torq_3",
               "type": "Float",
               "niceName": "/j_torq 3",
@@ -6106,7 +6174,7 @@
               "shortName": "_j_torq_3"
             },
             {
-              "value": 11.52000045776367,
+              "value": -3.200000047683716,
               "controlAddress": "/_j_torq_4",
               "type": "Float",
               "niceName": "/j_torq 4",
@@ -6118,7 +6186,7 @@
               "shortName": "_j_torq_4"
             },
             {
-              "value": -2.240000009536743,
+              "value": 3.519999980926514,
               "controlAddress": "/_j_torq_5",
               "type": "Float",
               "niceName": "/j_torq 5",
@@ -6142,7 +6210,7 @@
               "shortName": "_ping"
             },
             {
-              "value": -117.9795913696289,
+              "value": 359.5902404785156,
               "minValue": -1100.0,
               "maxValue": 1100.0,
               "default": 0.0,
@@ -6157,7 +6225,7 @@
               "shortName": "_tcp_pos_0"
             },
             {
-              "value": -460.6697387695312,
+              "value": 268.7742614746094,
               "minValue": -1100.0,
               "maxValue": 1100.0,
               "default": 0.0,
@@ -6172,7 +6240,7 @@
               "shortName": "_tcp_pos_1"
             },
             {
-              "value": 143.7833557128906,
+              "value": 824.3780517578125,
               "minValue": -650.0,
               "maxValue": 1235.0,
               "default": 0.0,
@@ -6187,7 +6255,7 @@
               "shortName": "_tcp_pos_2"
             },
             {
-              "value": 102.4086761474609,
+              "value": -1.874068140983582,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6202,7 +6270,7 @@
               "shortName": "_tcp_pos_3"
             },
             {
-              "value": -54.63772964477539,
+              "value": 4.053591251373291,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6217,7 +6285,7 @@
               "shortName": "_tcp_pos_4"
             },
             {
-              "value": -23.21152687072754,
+              "value": -169.6673889160156,
               "minValue": -180,
               "maxValue": 180,
               "default": 0.0,
@@ -6232,7 +6300,7 @@
               "shortName": "_tcp_pos_5"
             },
             {
-              "value": -3.5,
+              "value": -0.300000011920929,
               "controlAddress": "/_ft_sens_0",
               "type": "Float",
               "niceName": "/ft_sens 0",
@@ -6244,7 +6312,7 @@
               "shortName": "_ft_sens_0"
             },
             {
-              "value": -3.299999952316284,
+              "value": -3.900045394897461,
               "controlAddress": "/_ft_sens_1",
               "type": "Float",
               "niceName": "/ft_sens 1",
@@ -6256,7 +6324,7 @@
               "shortName": "_ft_sens_1"
             },
             {
-              "value": -1.400006055831909,
+              "value": -6.100006103515625,
               "controlAddress": "/_ft_sens_2",
               "type": "Float",
               "niceName": "/ft_sens 2",
@@ -6268,7 +6336,7 @@
               "shortName": "_ft_sens_2"
             },
             {
-              "value": 0.1899999976158142,
+              "value": 0.1299999952316284,
               "controlAddress": "/_ft_sens_3",
               "type": "Float",
               "niceName": "/ft_sens 3",
@@ -6280,7 +6348,7 @@
               "shortName": "_ft_sens_3"
             },
             {
-              "value": -0.2199999988079071,
+              "value": -0.07000000029802322,
               "controlAddress": "/_ft_sens_4",
               "type": "Float",
               "niceName": "/ft_sens 4",
@@ -6292,7 +6360,7 @@
               "shortName": "_ft_sens_4"
             },
             {
-              "value": -0.05000000074505806,
+              "value": 1.759999990463257,
               "controlAddress": "/_ft_sens_5",
               "type": "Float",
               "niceName": "/ft_sens 5",
@@ -6344,6 +6412,15 @@
         }
       },
       {
+<<<<<<< HEAD
+=======
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "Keyboard",
         "type": "Keyboard",
         "scripts": {
@@ -6393,7 +6470,7 @@
       {
         "parameters": [
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/enabled"
           }
         ],
@@ -6457,7 +6534,11 @@
         "values": {
           "parameters": [
             {
+<<<<<<< HEAD
               "value": 67.24820709228516,
+=======
+              "value": 11.23240184783936,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_leftelbow",
               "type": "Float",
               "niceName": "/angle_leftelbow",
@@ -6469,7 +6550,11 @@
               "shortName": "_angle_leftelbow"
             },
             {
+<<<<<<< HEAD
               "value": 179.0593109130859,
+=======
+              "value": 179.2707366943359,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_leftleg",
               "type": "Float",
               "niceName": "/angle_leftleg",
@@ -6481,7 +6566,11 @@
               "shortName": "_angle_leftleg"
             },
             {
+<<<<<<< HEAD
               "value": 143.8999633789062,
+=======
+              "value": 176.4695281982422,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_leftwrist",
               "type": "Float",
               "niceName": "/angle_leftwrist",
@@ -6493,7 +6582,11 @@
               "shortName": "_angle_leftwrist"
             },
             {
+<<<<<<< HEAD
               "value": 164.8492736816406,
+=======
+              "value": 117.5769348144531,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_rightelbow",
               "type": "Float",
               "niceName": "/angle_rightelbow",
@@ -6505,7 +6598,11 @@
               "shortName": "_angle_rightelbow"
             },
             {
+<<<<<<< HEAD
               "value": 179.2356109619141,
+=======
+              "value": 179.2431335449219,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_rightleg",
               "type": "Float",
               "niceName": "/angle_rightleg",
@@ -6517,7 +6614,11 @@
               "shortName": "_angle_rightleg"
             },
             {
+<<<<<<< HEAD
               "value": 164.4725494384766,
+=======
+              "value": 130.6947326660156,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_angle_rightwrist",
               "type": "Float",
               "niceName": "/angle_rightwrist",
@@ -6529,7 +6630,11 @@
               "shortName": "_angle_rightwrist"
             },
             {
+<<<<<<< HEAD
               "value": 0.4646961092948914,
+=======
+              "value": 0.471060186624527,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_nX",
               "type": "Float",
               "niceName": "/nX",
@@ -6541,7 +6646,11 @@
               "shortName": "_nX"
             },
             {
+<<<<<<< HEAD
               "value": 0.4168707728385925,
+=======
+              "value": 0.4799984097480774,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/_nY",
               "type": "Float",
               "niceName": "/nY",
@@ -6568,6 +6677,15 @@
         }
       },
       {
+<<<<<<< HEAD
+=======
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "WebSocket Server",
         "type": "WebSocket Server",
         "scripts": {
@@ -6612,6 +6730,413 @@
         }
       },
       {
+<<<<<<< HEAD
+=======
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+        "niceName": "XTouch",
+        "type": "XTouch Daniel",
+        "scripts": {
+          "items": [
+            {
+              "niceName": "XTouch",
+              "type": "BaseItem",
+              "scriptParams": {
+                "hideInEditor": true
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": [
+                "",
+                ""
+              ],
+              "controlAddress": "/devices",
+              "type": "MIDIDevice",
+              "niceName": "Devices",
+              "customizable": false,
+              "removable": false,
+              "description": "MIDI Devices",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": "",
+              "controlAddress": "/sequenceTime"
+            },
+            {
+              "minValue": 0,
+              "default": 0,
+              "hexMode": false,
+              "controlAddress": "/stripIndex",
+              "type": "Integer",
+              "niceName": "stripIndex",
+              "customizable": false,
+              "removable": false,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "minValue": 0,
+              "default": 0,
+              "hexMode": false,
+              "controlAddress": "/bankIndex",
+              "type": "Integer",
+              "niceName": "bankIndex",
+              "customizable": false,
+              "removable": false,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": "Inputs",
+              "enumOptions": {
+                "MidiTracks": 0,
+                "Inputs": 1,
+                "AudioTracks": 2,
+                "AudioInst": 3,
+                "Aux": 4,
+                "Buses": 5,
+                "Output": 6,
+                "User": 7
+              },
+              "controlAddress": "/activeView",
+              "type": "Enum",
+              "niceName": "ActiveView",
+              "customizable": false,
+              "removable": false,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": "Pan/Surround",
+              "enumOptions": {
+                "Track": 0,
+                "Pan/Surround": 2,
+                "EQ": 4,
+                "Send": 1,
+                "Plug-in": 3,
+                "Inst": 5
+              },
+              "controlAddress": "/encodersAssign",
+              "type": "Enum",
+              "niceName": "EncodersAssign",
+              "customizable": false,
+              "removable": false,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "minValue": 0,
+              "maxValue": 99,
+              "default": 0,
+              "hexMode": false,
+              "controlAddress": "/assignmentDisplay",
+              "type": "Integer",
+              "niceName": "Assignment Display",
+              "customizable": false,
+              "removable": false,
+              "description": "",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": "Joints",
+              "controlAddress": "/timeDisplay",
+              "type": "String",
+              "niceName": "Time Display",
+              "customizable": false,
+              "removable": false,
+              "description": "7 characters for Bars/Beats",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "infos": {
+              "parameters": [
+                {
+                  "value": 63,
+                  "hexMode": false,
+                  "controlAddress": "/lastPitch"
+                },
+                {
+                  "value": 127,
+                  "hexMode": false,
+                  "controlAddress": "/lastVelocity"
+                }
+              ]
+            },
+            "tempo": {
+            },
+            "mtc": {
+            },
+            "strips": {
+              "containers": {
+                "strip1": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": 0.1916440278291702,
+                      "controlAddress": "/rotaryValue"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J1",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.6314037442207336,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip2": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J2",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.5243136286735535,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip3": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J3",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.8062535524368286,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip4": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J4",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.7074113488197327,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip5": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J5",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.6694356203079224,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip6": {
+                  "parameters": [
+                    {
+                      "value": "Green",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Range",
+                      "controlAddress": "/encoderName"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "J6",
+                      "controlAddress": "/faderName"
+                    },
+                    {
+                      "value": 0.570885956287384,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip7": {
+                  "parameters": [
+                    {
+                      "value": "Magenta",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "Speed",
+                      "controlAddress": "/faderName"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip8": {
+                  "parameters": [
+                    {
+                      "value": "Magenta",
+                      "controlAddress": "/color"
+                    },
+                    {
+                      "value": "Wrap",
+                      "controlAddress": "/rotaryMode"
+                    },
+                    {
+                      "value": "Acceler",
+                      "controlAddress": "/faderName"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                }
+              }
+            },
+            "main": {
+              "editorIsCollapsed": true
+            },
+            "encoder_Assign": {
+              "editorIsCollapsed": true
+            },
+            "display": {
+              "editorIsCollapsed": true
+            },
+            "views": {
+              "editorIsCollapsed": true
+            },
+            "functionnal": {
+              "editorIsCollapsed": true
+            },
+            "modify": {
+              "editorIsCollapsed": true
+            },
+            "automation": {
+              "editorIsCollapsed": true
+            },
+            "utility": {
+              "editorIsCollapsed": true
+            },
+            "transport": {
+              "editorIsCollapsed": true
+            },
+            "misc": {
+              "editorIsCollapsed": true
+            }
+          }
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "XTouch midi",
         "type": "MIDI",
         "scripts": {
@@ -8448,6 +8973,12 @@
         }
       },
       {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
         "niceName": "Sound Card",
         "type": "Sound Card",
         "scripts": {
@@ -8519,6 +9050,15 @@
         }
       },
       {
+<<<<<<< HEAD
+=======
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/enabled"
+          }
+        ],
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "RoboDK",
         "type": "OSC",
         "scripts": {
@@ -9024,6 +9564,136 @@
                     "parameters": [
                       {
                         "value": 724.52490234375,
+                        "controlAddress": "/servoAcceleration"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Servo acceleration"
+                  },
+                  "xtPointSet": {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/xtPointSet"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "XT point set"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    0.0,
+                    0.7386698722839355,
+                    1.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                }
+              ],
+              "niceName": "MocapJointPreset",
+              "editorIsCollapsed": true,
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "j1": {
+                    "parameters": [
+                      {
+                        "value": 29.30825424194336,
+                        "controlAddress": "/j1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j1"
+                  },
+                  "j2": {
+                    "parameters": [
+                      {
+                        "value": -70.44288635253906,
+                        "controlAddress": "/j2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j2"
+                  },
+                  "j3": {
+                    "parameters": [
+                      {
+                        "value": -108.2567367553711,
+                        "controlAddress": "/j3"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j3"
+                  },
+                  "j4": {
+                    "parameters": [
+                      {
+                        "value": -25.14629173278809,
+                        "controlAddress": "/j4"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j4"
+                  },
+                  "j5": {
+                    "parameters": [
+                      {
+                        "value": 142.3521423339844,
+                        "controlAddress": "/j5"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j5"
+                  },
+                  "j6": {
+                    "parameters": [
+                      {
+                        "value": 107.5474472045898,
+                        "controlAddress": "/j6"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "j6"
+                  },
+                  "moveJSpeed": {
+                    "parameters": [
+                      {
+                        "value": 44.01048278808594,
+                        "controlAddress": "/moveJSpeed"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "moveJ speed"
+                  },
+                  "moveJAcceleration": {
+                    "parameters": [
+                      {
+                        "value": 15.51516532897949,
+                        "controlAddress": "/moveJAcceleration"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "moveJ acceleration"
+                  },
+                  "servoSpeed": {
+                    "parameters": [
+                      {
+                        "value": 165.1314239501953,
+                        "controlAddress": "/servoSpeed"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Servo speed"
+                  },
+                  "servoAcceleration": {
+                    "parameters": [
+                      {
+                        "value": 1449.655883789062,
                         "controlAddress": "/servoAcceleration"
                       }
                     ],
@@ -12039,6 +12709,310 @@
         }
       },
       {
+        "niceName": "Mocap variables",
+        "type": "CVGroup",
+        "params": {
+        },
+        "variables": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 0.3792747855186462,
+                  "controlAddress": "/noseXStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "noseX startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "noseX startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.5646974444389343,
+                  "controlAddress": "/noseYStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "noseY startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "noseY startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 174.7637481689453,
+                  "controlAddress": "/angleLeftElbowStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle leftElbow startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle leftElbow startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 157.091064453125,
+                  "controlAddress": "/angleRightElbowStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle rightElbow startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle rightElbow startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 168.8639984130859,
+                  "controlAddress": "/angleLeftWristStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle leftWrist startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle leftWrist startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 170.5497589111328,
+                  "controlAddress": "/angleRightWristStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle rightWrist startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle rightWrist startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 179.8628234863281,
+                  "controlAddress": "/angleLeftLegStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle leftLeg startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle leftLeg startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 179.6428985595703,
+                  "controlAddress": "/angleRightLegStartpos",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "angle rightLeg startpos",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "angle rightLeg startpos",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": -0.14276123046875,
+                  "controlAddress": "/deltaNoseX",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta noseX",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta noseX",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": -61.95271301269531,
+                  "controlAddress": "/deltaNoseY",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta noseY",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta noseY",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaLeftElbow",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta leftElbow",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta leftElbow",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaRightElbow",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta rightElbow",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta rightElbow",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaRightWrist",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta rightWrist",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta rightWrist",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaLeftWrist",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta leftWrist",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta leftWrist",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaRightLeg",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta rightLeg",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta rightLeg",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "controlAddress": "/deltaLeftLeg",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "delta leftLeg",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "delta leftLeg",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "presets": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
         "niceName": "Robot state",
         "type": "CVGroup",
         "params": {
@@ -12082,6 +13056,7 @@
         }
       },
       {
+<<<<<<< HEAD
         "niceName": "Mocap variables",
         "type": "CVGroup",
         "params": {
@@ -12392,6 +13367,8 @@
         }
       },
       {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
         "niceName": "XT state",
         "type": "CVGroup",
         "params": {
@@ -13163,7 +14140,7 @@
             {
               "parameters": [
                 {
-                  "value": -0.5531835556030273,
+                  "value": -0.02541338711503532,
                   "controlAddress": "/fX",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13181,7 +14158,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.767492862627974,
+                  "value": 4.160356631061259,
                   "controlAddress": "/fY",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13199,7 +14176,7 @@
             {
               "parameters": [
                 {
-                  "value": -4.54541499751846,
+                  "value": -5.933061217826873,
                   "controlAddress": "/fZ",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13217,7 +14194,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.291923857320768,
+                  "value": -0.2522866180097491,
                   "controlAddress": "/tX",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13235,7 +14212,7 @@
             {
               "parameters": [
                 {
-                  "value": -0.0206175928608039,
+                  "value": -0.03338652201454498,
                   "controlAddress": "/tY",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13253,7 +14230,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0368154184491275,
+                  "value": 1.747751918252012,
                   "controlAddress": "/tZ",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -13271,7 +14248,7 @@
             {
               "parameters": [
                 {
-                  "value": -8.200006484985352,
+                  "value": -10.30005168914795,
                   "controlAddress": "/totalF",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -16842,7 +17819,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 29.30825424194336,
+                          "value": 49.48296737670898,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_0",
@@ -16877,7 +17854,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -70.44288635253906,
+                          "value": -82.25999450683594,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_1",
@@ -16912,7 +17889,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -108.2567367553711,
+                          "value": -98.98826599121094,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_2",
@@ -16947,7 +17924,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -25.14629173278809,
+                          "value": -84.42459869384766,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_3",
@@ -16982,7 +17959,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 142.3521423339844,
+                          "value": -91.10276794433594,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_4",
@@ -17017,7 +17994,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 107.5474472045898,
+                          "value": 50.95763397216797,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_j_pos_5",
@@ -17051,7 +18028,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -117.9795913696289,
+                          "value": 359.5902404785156,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_0",
@@ -17085,7 +18062,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -460.6697387695312,
+                          "value": 268.7742614746094,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_1",
@@ -17119,7 +18096,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 143.7833557128906,
+                          "value": 824.3780517578125,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_2",
@@ -17153,7 +18130,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 102.4086761474609,
+                          "value": -1.874068140983582,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_3",
@@ -17187,7 +18164,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -54.63772964477539,
+                          "value": 4.053591251373291,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_4",
@@ -17221,7 +18198,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": -23.21152687072754,
+                          "value": -169.6673889160156,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_tcp_pos_5",
@@ -17989,6 +18966,2114 @@
       {
         "parameters": [
           {
+<<<<<<< HEAD
+=======
+            "value": [
+              1392.0,
+              688.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              288.0,
+              448.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": [
+              0.3765608072280884,
+              0.3846156895160675,
+              0.1168627440929413,
+              1.0
+            ],
+            "controlAddress": "/color"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "MOCAP CONTROL",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Mocap Deactivate",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "disable nose stream",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "State",
+                    "commandType": "Set State Activation",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mocapNose__XY",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "disable elbow stream",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "State",
+                    "commandType": "Set State Activation",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mocapJointMaps",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "enable Move mode",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/stateSwap/processors/move",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Mocap Nose Activate",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "set target to Mid",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Preset",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/targetTCPPos/presets/m",
+                          "controlAddress": "/targetPreset"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MOVE state",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/stateSwap/processors/move",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MoveJ",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/move/processors/moveL",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "set Mocap to NULL",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mocapCONTROL/processors/setNoseStartPosition",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "enable mocap mapping",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "State",
+                    "commandType": "Set State Activation",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mocapNose__XY",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "enable ServoJ",
+                    "editorIsCollapsed": true,
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/stateSwap/processors/servoCART",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Mocap Jointmap Activate",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "set current pos",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mainControl/processors/setTargetToCurrentPos",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "update preset",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/customVariables/targetJointAngles/presets/mocapJointPreset/update",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "enable mocap mapping",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "State",
+                    "commandType": "Set State Activation",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mocapJointMaps",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "enable ServoJ",
+                    "editorIsCollapsed": true,
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/stateSwap/processors/servoCART",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "noseY diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_nY",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/noseYStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            -1.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            -300.0,
+                            300.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.740963876247406,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaNoseY",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "noseX diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_nX",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/noseXStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            -1.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            -300.0,
+                            300.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaNoseX",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "leftelbow diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_leftelbow",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleLeftElbowStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            200.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaLeftElbow",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "rightelbow diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_rightelbow",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleRightElbowStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            70.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaRightElbow",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "leftWrist diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_leftwrist",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleLeftWristStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            70.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaLeftWrist",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "rightWrist diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_rightwrist",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleRightWristStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            70.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaRightWrist",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "leftLeg diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_leftleg",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleLeftLegStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            70.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaLeftLeg",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "rightLeg diff",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/oscMP/values/_angle_rightleg",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/angleRightLegStartpos",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Difference",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "Smooth",
+                    "editorIsCollapsed": true,
+                    "type": "Smooth",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": 0.7208835482597351,
+                          "controlAddress": "/smoothing"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            180.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            70.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/deltaRightLeg",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Set nose start position",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "ry",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/noseXStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 0.471060186624527,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_nX",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "editorIsCollapsed": true,
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "rz",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/noseYStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 0.4799984097480774,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_nY",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Set mocap relative start",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "leftElbow",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleLeftElbowStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 11.23240184783936,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_leftelbow",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "rightElbow",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleRightElbowStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 117.5769348144531,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_rightelbow",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "leftWrist",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleLeftWristStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 176.4695281982422,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_leftwrist",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "rightWrist",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleRightWristStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 130.6947326660156,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_rightwrist",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "leftLeg",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleLeftLegStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 179.2707366943359,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_leftleg",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "rightLeg",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/mocapVariables/angleRightLegStartpos",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        },
+                        {
+                          "value": 179.2431335449219,
+                          "controlMode": 2,
+                          "reference": {
+                            "value": "/modules/oscMP/values/_angle_rightleg",
+                            "controlAddress": "/reference"
+                          },
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Set joint preset",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "editorIsCollapsed": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "set target to current pos",
+                    "type": "Consequence",
+                    "commandModule": "stateMachine",
+                    "commandPath": "Action",
+                    "commandType": "Trigger Action",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/states/mainControl/processors/setTargetToCurrentPos",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "set preset",
+                    "type": "Consequence",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Preset",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/targetJointAngles/presets/mocapJointPreset",
+                          "controlAddress": "/targetPreset"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
             "value": [
               -288.0,
               688.0
@@ -18313,14 +21398,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 29.30825424194336,
+                                "value": 49.48296737670898,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 29.30825424194336,
+                              "value": 49.48296737670898,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -18331,14 +21416,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -70.44288635253906,
+                                "value": -82.25999450683594,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#2",
                             "type": "Float",
                             "param": {
-                              "value": -70.44288635253906,
+                              "value": -82.25999450683594,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#2/#1"
                             },
                             "paramLink": {
@@ -18349,14 +21434,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -108.2567367553711,
+                                "value": -98.98826599121094,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#3",
                             "type": "Float",
                             "param": {
-                              "value": -108.2567367553711,
+                              "value": -98.98826599121094,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#3/#1"
                             },
                             "paramLink": {
@@ -18367,14 +21452,14 @@
                           {
                             "parameters": [
                               {
-                                "value": -25.14629173278809,
+                                "value": -84.42459869384766,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#4",
                             "type": "Float",
                             "param": {
-                              "value": -25.14629173278809,
+                              "value": -84.42459869384766,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#4/#1"
                             },
                             "paramLink": {
@@ -18385,14 +21470,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 142.3521423339844,
+                                "value": -91.10276794433594,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#5",
                             "type": "Float",
                             "param": {
-                              "value": 142.3521423339844,
+                              "value": -91.10276794433594,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#5/#1"
                             },
                             "paramLink": {
@@ -18403,14 +21488,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 107.5474472045898,
+                                "value": 50.95763397216797,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#6",
                             "type": "Float",
                             "param": {
-                              "value": 107.5474472045898,
+                              "value": 50.95763397216797,
                               "controlAddress": "/states/mainAuto/processors/oscToWS/outputs/mappingOutput/command/arguments/#6/#1"
                             },
                             "paramLink": {
@@ -18447,6 +21532,256 @@
         "parameters": [
           {
             "value": [
+<<<<<<< HEAD
+=======
+              1712.0,
+              688.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              273.0,
+              125.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": false,
+            "controlAddress": "/active"
+          },
+          {
+            "value": "Deactivate",
+            "controlAddress": "/onLoadBehavior"
+          }
+        ],
+        "niceName": "mocap nose -> XY",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "MAP noseX->X",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/deltaNoseX",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/targetTCPPos/presets/m/values/x/x",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Sum",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/targetTCPPos/x",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "MAP noseY->Z",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/mocapVariables/deltaNoseY",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/targetTCPPos/presets/m/values/z/z",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Merge",
+                    "type": "Merge",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": "Sum",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "customVariables",
+                    "commandPath": "",
+                    "commandType": "Set Value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/targetTCPPos/z",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": "All",
+                          "controlAddress": "/component"
+                        },
+                        {
+                          "value": "Equals",
+                          "controlAddress": "/operator"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               608.0,
               0.0
             ],
@@ -47844,7 +51179,7 @@
                     "filterParams": {
                       "parameters": [
                         {
-                          "value": -3.299999952316284,
+                          "value": -3.900045394897461,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_ft_sens_1",
@@ -47857,7 +51192,7 @@
                       }
                     },
                     "operationValue": {
-                      "value": -3.299999952316284,
+                      "value": -3.900045394897461,
                       "controlMode": 2,
                       "reference": {
                         "value": "/modules/oscPythonServer/values/_ft_sens_1",
@@ -47872,7 +51207,7 @@
                     "filterParams": {
                       "parameters": [
                         {
-                          "value": -1.400006055831909,
+                          "value": -6.100006103515625,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/oscPythonServer/values/_ft_sens_2",
@@ -47885,7 +51220,7 @@
                       }
                     },
                     "operationValue": {
-                      "value": -1.400006055831909,
+                      "value": -6.100006103515625,
                       "controlMode": 2,
                       "reference": {
                         "value": "/modules/oscPythonServer/values/_ft_sens_2",
@@ -51112,6 +54447,7 @@
         "parameters": [
           {
             "value": false,
+<<<<<<< HEAD
             "controlAddress": "/miniMode"
           },
           {
@@ -53523,12 +56859,19 @@
         "parameters": [
           {
             "value": true,
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
             "controlAddress": "/enabled"
           },
           {
             "value": [
+<<<<<<< HEAD
               1696.0,
               848.0
+=======
+              1712.0,
+              832.0
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
             ],
             "controlAddress": "/viewUIPosition"
           },
@@ -53540,7 +56883,11 @@
             "controlAddress": "/viewUISize"
           },
           {
+<<<<<<< HEAD
             "value": false,
+=======
+            "value": true,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
             "controlAddress": "/active"
           }
         ],
@@ -54248,10 +57595,17 @@
       }
     ],
     "viewOffset": [
+<<<<<<< HEAD
       -998,
       -584
     ],
     "viewZoom": 0.6253906488418579,
+=======
+      927,
+      1640
+    ],
+    "viewZoom": 0.7054687738418579,
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
     "transitions": {
       "hideInEditor": true,
       "items": [
@@ -55058,20 +58412,34 @@
           "parameters": [
             {
               "value": [
+<<<<<<< HEAD
                 1689.318725585938,
                 1083.076904296875
+=======
+                1725.536499023438,
+                1083.963989257812
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               ],
               "controlAddress": "/viewUIPosition"
             },
             {
               "value": [
+<<<<<<< HEAD
                 270.0,
                 108.0
+=======
+                242.0,
+                91.0
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               ],
               "controlAddress": "/viewUISize"
             },
             {
+<<<<<<< HEAD
               "value": "TODO\n- testen hoe die angle te berekenen. Vanuit 0punt die je zet op moment, of vanuit de 0 van de angle? Wat is intuitiever. \n- of dat ie naar de eerste positie met delay gaat",
+=======
+              "value": "TODO:\n- testen hoe die angle te berekenen. Vanuit 0punt die je zet op moment, of vanuit de 0 van de angle? Wat is intuitiever. ",
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
               "controlAddress": "/text"
             }
           ],
@@ -55080,10 +58448,17 @@
         }
       ],
       "viewOffset": [
+<<<<<<< HEAD
         -998,
         -584
       ],
       "viewZoom": 0.6253906488418579
+=======
+        927,
+        1640
+      ],
+      "viewZoom": 0.7054687738418579
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
     }
   },
   "sequences": {
@@ -55732,10 +59107,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -175.0,
                         175.0
@@ -55844,10 +59222,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -265.0,
                         85.0
@@ -55956,10 +59337,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -160.0,
                         160.0
@@ -56068,10 +59452,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -265.0,
                         85.0
@@ -56180,10 +59567,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -175.0,
                         175.0
@@ -56292,10 +59682,13 @@
                       "controlAddress": "/length"
                     },
                     {
+<<<<<<< HEAD
                       "value": 30.0,
                       "controlAddress": "/position"
                     },
                     {
+=======
+>>>>>>> fe5564c (add MP to new train changes of Daniel)
                       "value": [
                         -360.0,
                         360.0
