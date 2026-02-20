@@ -33,7 +33,7 @@ function filter(inputs, minValues, maxValues, multiplexIndex) {
 	}
 
 	// --- LARGE DT PROTECTION ---
-	if (dT > 0.3) {
+	if (dT > 0.5) {
 		lastTime = nowMs;
 
 		// copy inputs to previousInputs
