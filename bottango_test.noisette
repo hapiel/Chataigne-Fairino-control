@@ -1,0 +1,754 @@
+{
+  "metaData": {
+    "version": "1.10.1b1",
+    "versionNumber": 68097
+  },
+  "projectSettings": {
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          },
+          {
+            "value": true,
+            "controlAddress": "/enableDashboardServer"
+          },
+          {
+            "value": 9999,
+            "hexMode": false,
+            "controlAddress": "/serverPort"
+          }
+        ]
+      },
+      "customDefinitions": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "parameters": [
+      {
+        "value": false,
+        "controlAddress": "/editMode"
+      },
+      {
+        "value": false,
+        "controlAddress": "/snapping"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1441,
+      "height": 810,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1441,
+          "height": 810,
+          "direction": 2,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1441,
+              "height": 651,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 293,
+                  "height": 651,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 293,
+                      "height": 337,
+                      "currentContent": "Modules",
+                      "tabs": [
+                        {
+                          "name": "Modules"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 293,
+                      "height": 308,
+                      "currentContent": "Custom Variables",
+                      "tabs": [
+                        {
+                          "name": "Custom Variables"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 482,
+                  "height": 651,
+                  "currentContent": "State Machine",
+                  "tabs": [
+                    {
+                      "name": "State Machine"
+                    },
+                    {
+                      "name": "Dashboard"
+                    },
+                    {
+                      "name": "Module Router"
+                    },
+                    {
+                      "name": "Morpher"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 654,
+                  "height": 651,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 1441,
+              "height": 153,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 178,
+                  "height": 153,
+                  "currentContent": "Sequences",
+                  "tabs": [
+                    {
+                      "name": "Sequences"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 638,
+                  "height": 153,
+                  "currentContent": "Sequence Editor",
+                  "tabs": [
+                    {
+                      "name": "Sequence Editor"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 613,
+                  "height": 153,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Help"
+                    },
+                    {
+                      "name": "Logger"
+                    },
+                    {
+                      "name": "Warnings"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "modules": {
+    "items": [
+      {
+        "niceName": "HTTP",
+        "type": "HTTP",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": "http://localhost:59224",
+              "controlAddress": "/baseAddress"
+            }
+          ],
+          "containers": {
+            "authentication": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+        }
+      },
+      {
+        "niceName": "XTouch Daniel",
+        "type": "XTouch Daniel",
+        "scripts": {
+          "items": [
+            {
+              "niceName": "XTouch",
+              "type": "BaseItem",
+              "scriptParams": {
+                "hideInEditor": true
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": [
+                "\\\\?\\usb#vid_1397&pid_00b1&mi_00#7&5b6a07b&1&0000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\\global",
+                "\\\\?\\usb#vid_1397&pid_00b1&mi_00#7&5b6a07b&1&0000#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\\global"
+              ],
+              "inputName": "X-Touch",
+              "outputName": "X-Touch",
+              "controlAddress": "/devices",
+              "type": "MIDIDevice",
+              "niceName": "Devices",
+              "customizable": false,
+              "removable": false,
+              "description": "MIDI Devices",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": "",
+              "controlAddress": "/sequenceTime"
+            },
+            {
+              "value": "          ",
+              "controlAddress": "/timeDisplay"
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "infos": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/oneNoteOn"
+                },
+                {
+                  "value": 105,
+                  "hexMode": false,
+                  "controlAddress": "/lastPitch"
+                },
+                {
+                  "value": 127,
+                  "hexMode": false,
+                  "controlAddress": "/lastVelocity"
+                }
+              ]
+            },
+            "tempo": {
+            },
+            "mtc": {
+            },
+            "strips": {
+              "containers": {
+                "strip1": {
+                  "parameters": [
+                    {
+                      "value": 0.6166056166056166,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip2": {
+                  "parameters": [
+                    {
+                      "value": 0.5687423687423687,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip3": {
+                  "parameters": [
+                    {
+                      "value": 0.5177045177045178,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip4": {
+                  "parameters": [
+                    {
+                      "value": 0.432967032967033,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip5": {
+                  "parameters": [
+                    {
+                      "value": 0.4788766788766789,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip6": {
+                  "parameters": [
+                    {
+                      "value": 0.3797313797313797,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                },
+                "strip7": {
+                  "editorIsCollapsed": true
+                },
+                "strip8": {
+                  "parameters": [
+                    {
+                      "value": 0.1448107448107448,
+                      "controlAddress": "/faderValue"
+                    }
+                  ],
+                  "editorIsCollapsed": true
+                }
+              }
+            },
+            "main": {
+              "parameters": [
+                {
+                  "value": 0.7831501831501831,
+                  "controlAddress": "/mainFader"
+                }
+              ],
+              "editorIsCollapsed": true
+            },
+            "encoder_Assign": {
+              "editorIsCollapsed": true
+            },
+            "display": {
+              "editorIsCollapsed": true
+            },
+            "views": {
+              "editorIsCollapsed": true
+            },
+            "functionnal": {
+              "editorIsCollapsed": true
+            },
+            "modify": {
+              "editorIsCollapsed": true
+            },
+            "automation": {
+              "editorIsCollapsed": true
+            },
+            "utility": {
+              "editorIsCollapsed": true
+            },
+            "transport": {
+              "editorIsCollapsed": true
+            },
+            "misc": {
+              "editorIsCollapsed": true
+            }
+          }
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "customVariables": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "states": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/snapGridMode"
+      },
+      {
+        "value": false,
+        "controlAddress": "/showSnapGrid"
+      },
+      {
+        "value": 16,
+        "hexMode": false,
+        "controlAddress": "/snapGridSize"
+      }
+    ],
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": [
+              -378.7755126953125,
+              -244.2449035644531
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "State",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "j 1",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip1/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip2/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 5",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip3/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 4",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip4/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 3",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip5/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 2",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip6/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "http",
+                    "commandPath": "",
+                    "commandType": "Request with payload",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "PUT",
+                          "controlAddress": "/method"
+                        },
+                        {
+                          "value": "JSON",
+                          "controlAddress": "/resultType"
+                        },
+                        {
+                          "value": "/ControlInput/",
+                          "controlAddress": "/address"
+                        },
+                        {
+                          "value": "",
+                          "controlAddress": "/extraHeaders"
+                        },
+                        {
+                          "value": "{ \"identifier\": \"motor\", \"value\": {input:1},\n }",
+                          "controlAddress": "/payload"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ],
+              "niceName": "j 2",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/xTouchDaniel/values/strips/strip2/faderValue",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 5",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "http",
+                    "commandPath": "",
+                    "commandType": "Request with payload",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "PUT",
+                          "controlAddress": "/method"
+                        },
+                        {
+                          "value": "Default",
+                          "controlAddress": "/resultType"
+                        },
+                        {
+                          "value": "/ControlInput/",
+                          "controlAddress": "/address"
+                        },
+                        {
+                          "value": "Content-Type: text/plain",
+                          "controlAddress": "/extraHeaders"
+                        },
+                        {
+                          "value": "{ \"identifier\": \"motor1\", \"value\": {input:1},\n }",
+                          "controlAddress": "/payload"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      96,
+      -20
+    ],
+    "viewZoom": 0.765625,
+    "transitions": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "comments": {
+      "hideInEditor": true,
+      "viewOffset": [
+        96,
+        -20
+      ],
+      "viewZoom": 0.765625
+    }
+  },
+  "sequences": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "routers": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}

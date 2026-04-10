@@ -5,6 +5,8 @@ import time
 from fairino import Robot
 import socket
 import struct
+from recorder import PathRecorder, ask_open_path
+from player import PathPlayer
 import random
 
 # --- CONFIG ---
@@ -19,6 +21,8 @@ telemetry_interval = 1.0 / telemetry_hz
 
 # --- INIT ROBOT ---
 robot = Robot.RPC(ROBOT_IP)
+
+recorder = PathRecorder(save_dir="recordings")
 
 # --- MOTION HANDLERS ---
 def handle_movej(addr, *args):
@@ -199,6 +203,92 @@ def handle_set_rate(addr, hz):
     telemetry_interval = 1.0 / safe_hz
     print(f"Telemetry rate set to {safe_hz}Hz ({telemetry_interval:.4f}s)")
     
+# --- Recording handling ---
+
+def handle_record_start(addr):
+    recorder.start()
+
+
+def handle_record_stop(addr, *args):
+    """
+    /record/stop           → opens save dialog
+    /record/stop "myfile"  → saves directly to recordings/myfile.csv, skips dialog
+    """
+    path = None
+    if args and isinstance(args[0], str) and args[0].strip():
+        name = args[0].strip()
+        if not name.endswith(".csv"):
+            name += ".csv"
+        path = f"recordings/{name}"
+    recorder.stop_and_save(path)
+
+
+def handle_record_status(addr):
+    """Broadcasts current recording status back over OSC."""
+    client.send_message("/record/status", [
+        int(recorder.is_recording),
+        recorder.frame_count,
+        round(recorder.duration, 2),
+    ])
+
+
+# --- Playback handling ---
+
+def handle_playback_load(addr, *args):
+    """
+    /playback/load           → opens file dialog
+    /playback/load "name"    → loads recordings/name.csv directly
+    """
+    path = None
+    if args and isinstance(args[0], str) and args[0].strip():
+        name = args[0].strip()
+        if not name.endswith(".csv"):
+            name += ".csv"
+        path = f"recordings/{name}"
+    player.load(path)
+
+
+def handle_playback_start(addr, *args):
+    """/playback/start [speed]  — speed defaults to 1.0"""
+    speed = float(args[0]) if args else 1.0
+    player.start(speed=speed)
+
+
+def handle_playback_stop(addr):
+    player.stop()
+
+
+def handle_playback_pause(addr):
+    player.pause()
+
+
+def handle_playback_resume(addr):
+    player.resume()
+
+
+def handle_playback_scrub(addr, *args):
+    """/playback/scrub <0.0–1.0>  — preview frame, no robot motion"""
+    if args:
+        player.scrub(float(args[0]))
+
+
+def handle_playback_trim_start(addr, *args):
+    if args:
+        player.trim_start(float(args[0]))
+
+
+def handle_playback_trim_end(addr, *args):
+    if args:
+        player.trim_end(float(args[0]))
+
+
+def handle_playback_undo_trim(addr):
+    player.undo_trim()
+
+
+def handle_playback_status(addr):
+    player.send_status()
+    
 
 class UniqueUpdateTracker:
     def __init__(self, report_interval=1.0):
@@ -313,6 +403,8 @@ def telemetry_loop(osc_client):
                 osc_client.send_message("/j_torq", list(torques))
                 osc_client.send_message("/ft_sens", list(ft_sensor))
                 
+                recorder.add_frame(joints, tcp_pose)
+                
                 # Offset 314: Fault Codes (Serial 67/68)
                 # We calculate this based on the Serial 67 position in the table
                 # Note: These are often 'int32' (4 bytes)
@@ -325,6 +417,35 @@ def telemetry_loop(osc_client):
         except Exception as e:
             print(f"Stream Parse Error: {e}")
             break
+        
+        
+# --- POLLING LOOP (For SDK Status Queries) ---
+def polling_loop(osc_client):
+    last_btn_state = None
+    polling_hz = 50.0
+    interval = 1.0 / polling_hz
+
+    print(f"Started Status Polling Thread ({polling_hz}Hz)")
+
+    while True:
+        try:
+            # SDK returns (error_code, result)
+            ret, btn_status = robot.GetAxlePointRecordBtnState()
+            
+            if ret == 0:
+                if btn_status != last_btn_state:
+                    # 0-Press (True), 1-Release (False)
+                    is_pressed = (btn_status == 0)
+                    
+                    # Sending as native OSC bool
+                    osc_client.send_message("/robot/button/record", is_pressed)
+                    
+                    last_btn_state = btn_status
+            
+        except Exception as e:
+            print(f"Polling Error: {e}")
+        
+        time.sleep(interval)
 
 # --- SERVER START ---
 disp = dispatcher.Dispatcher()
@@ -353,11 +474,32 @@ disp.map("/servojt/start", handle_servojt_start)
 disp.map("/servojt/stop", handle_servojt_stop)
 disp.map("/servojt", handle_servojt)
 
+# recording
+disp.map("/record/start",   handle_record_start)
+disp.map("/record/stop",    handle_record_stop)
+disp.map("/record/status",  handle_record_status)
+
+# playback
+disp.map("/playback/load",       handle_playback_load)
+disp.map("/playback/start",      handle_playback_start)
+disp.map("/playback/stop",       handle_playback_stop)
+disp.map("/playback/pause",      handle_playback_pause)
+disp.map("/playback/resume",     handle_playback_resume)
+disp.map("/playback/scrub",      handle_playback_scrub)
+disp.map("/playback/trim_start", handle_playback_trim_start)
+disp.map("/playback/trim_end",   handle_playback_trim_end)
+disp.map("/playback/undo_trim",  handle_playback_undo_trim)
+disp.map("/playback/status",     handle_playback_status)
+
 server = ThreadingOSCUDPServer(("0.0.0.0", OSC_LISTEN_PORT), disp)
 client = udp_client.SimpleUDPClient(OSC_SEND_IP, OSC_SEND_PORT)
+player = PathPlayer(client, save_dir="recordings")
 
 # Start telemetry in a background thread
 threading.Thread(target=telemetry_loop, args=(client,), daemon=True).start()
+
+# Start polling (SDK status queries)
+threading.Thread(target=polling_loop, args=(client,), daemon=True).start()
 
 print(f"Fairino Precision Bridge Active on port {OSC_LISTEN_PORT}")
 print(f"Sending telemetry to {OSC_SEND_IP}:{OSC_SEND_PORT}")
