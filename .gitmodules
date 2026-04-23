@@ -1,0 +1,4 @@
+[submodule "wordverse-r3f-player"]
+	path = wordverse-r3f-player
+	url = https://github.com/Design-Party-Program/wordverse-r3f-player.git
+	branch = cobot-osc-scene
