@@ -179,6 +179,14 @@ Loads a recorded CSV and replays it by broadcasting joint positions over OSC. **
 [is_playing (0/1), is_paused (0/1), current_frame, total_frames, position (0.0–1.0), duration_seconds]
 ```
 
+### How playback timing works
+
+The player uses the `t` column (seconds from recording start) to reproduce the original timing exactly. At playback start it records the current wall-clock time (`t0`). For each frame it calculates the deadline — `t0 + frame.t / speed` — and sleeps until that moment arrives, then sends the frame.
+
+**If the player falls behind** (CPU busy, network slow): the deadline for a frame will already have passed, so `sleep_t` is negative and the sleep is skipped. The frame is sent immediately. No frames are ever dropped — they all go out — but they'll arrive in a burst. The player self-corrects automatically because each frame's deadline is calculated from `t0` independently, not from the previous frame, so there is no accumulated drift.
+
+**If there is a gap in the recording** (e.g. a dropout in the telemetry stream, or the robot stood still and you're replaying at high speed): the `t` values in the CSV will reflect the gap. The player reproduces it faithfully — it sleeps through the gap, holding the last-sent joint position. There is no interpolation or gap-filling.
+
 ### Notes on trim
 
 - Trim operates on the **normalised position** (same value as the scrub slider), so scrub to the exact frame you want first, then send that value as the trim argument.

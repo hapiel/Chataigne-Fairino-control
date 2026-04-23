@@ -37,6 +37,7 @@ def handle_movej(addr, *args):
         flag = 2 # 0 doesn't work on first run
 
         robot.MoveJ(q, tool, 0, vel=speed, acc=accel, ovl=ovl, offset_flag=flag)
+        print(f"MoveJ to {q} at speed {speed}, accel {accel}, ovl {ovl}")
 
     except Exception as e:
         print(f"MoveJ failed: {e}")
@@ -378,8 +379,10 @@ def telemetry_loop(osc_client):
                 buffer = buffer[total_packet_size:]
 
                 # --- UNPACK DATA ---
-                
+
                 base_error = struct.unpack_from('<B', packet, 6)[0]
+
+                robot_mode = struct.unpack_from('<B', packet, 7)[0]
                 
                 # Offset 8: Start of jt_cur_pos[0] (6 joints * 8 bytes)
                 joints = struct.unpack_from('<6d', packet, 8)
@@ -402,6 +405,7 @@ def telemetry_loop(osc_client):
                 osc_client.send_message("/tcp_pos", list(tcp_pose))
                 osc_client.send_message("/j_torq", list(torques))
                 osc_client.send_message("/ft_sens", list(ft_sensor))
+                osc_client.send_message("/robot_mode", robot_mode)
                 
                 recorder.add_frame(joints, tcp_pose)
                 

@@ -100,7 +100,7 @@ class PathPlayer:
             self._loaded_path = path
             self._backup_path = None
             self._current_frame_idx = 0
-            print(f"[Player] Loaded {len(frames)} frames ({self.duration:.2f}s) ← {path}")
+            print(f"[Player] Loaded {len(frames)} frames ({self.duration:.2f}s) from {path}")
             self._send_status()
         except Exception as e:
             print(f"[Player] Load failed: {e}")
@@ -196,8 +196,9 @@ class PathPlayer:
         if not self._loaded_path:
             return
         import os
-        base, ext = os.path.splitext(self._loaded_path)
-        self._backup_path = f"{base}.bak{ext}"
+        folder = os.path.dirname(self._loaded_path)
+        filename = os.path.basename(self._loaded_path)
+        self._backup_path = os.path.join(folder, f"backup_{filename}")
         try:
             import shutil
             shutil.copy2(self._loaded_path, self._backup_path)
