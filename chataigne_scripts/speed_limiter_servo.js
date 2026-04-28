@@ -6,9 +6,9 @@ var maxSpeedBase = script.addFloatParameter(
 
 
 var maxSpeed = script.addFloatParameter(
-	"max Speed j4-6",
+	"max Speed j4-6 ",
 	"maximum speed in degrees /s",
-	180, 0, 180
+	150, 0, 180
 );
 
 var maxAccelerationBase = script.addFloatParameter(
