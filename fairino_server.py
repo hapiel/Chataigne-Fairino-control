@@ -415,8 +415,8 @@ def telemetry_loop(osc_client):
                 main_err = struct.unpack_from('<i', packet, 314)[0]
                 sub_err = struct.unpack_from('<i', packet, 318)[0]
                 
-                if base_error != 0 or main_err != 0:
-                    osc_client.send_message("/error", [base_error, main_err, sub_err])
+                
+                osc_client.send_message("/error", [base_error, main_err, sub_err])
 
         except Exception as e:
             print(f"Stream Parse Error: {e}")

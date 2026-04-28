@@ -1,14 +1,29 @@
-var maxSpeed = script.addFloatParameter(
-	"max Speed",
+var maxSpeedBase = script.addFloatParameter(
+	"max Speed j1-3",
 	"maximum speed in degrees /s",
-	180, 0, 360
+	140, 0, 150
+);
+
+
+var maxSpeed = script.addFloatParameter(
+	"max Speed j4-6",
+	"maximum speed in degrees /s",
+	180, 0, 180
+);
+
+var maxAccelerationBase = script.addFloatParameter(
+	"max Acceleration j1-3",
+	"maximum acceleration in degrees /s^2 for bottom stuff",
+	360, 0, 1000
 );
 
 var maxAcceleration = script.addFloatParameter(
-	"max Acceleration",
+	"max Acceleration  j4-6",
 	"maximum acceleration in degrees /s^2",
-	360, 0, 8000
+	360, 0, 4000
 );
+
+
 
 // NEW: small distance threshold to clamp to target
 var targetDeadzone = script.addFloatParameter(
@@ -77,22 +92,25 @@ function filter(inputs, minValues, maxValues, multiplexIndex) {
 			continue;
 		}
 
+		// --- SELECT LIMITS BASED ON JOINT INDEX ---
+		// i < 3 → joints 1-3 (Base params), i >= 3 → joints 4-6 (standard params)
+		var accelLimit = (i < 3) ? maxAccelerationBase.get() : maxAcceleration.get();
+		var speedLimit = (i < 3) ? maxSpeedBase.get() : maxSpeed.get();
+
 		// --- MAX SAFE VELOCITY TO STOP AT TARGET ---
-		var vMax = Math.sqrt(2 * maxAcceleration.get() * Math.abs(distance));
+		var vMax = Math.sqrt(2 * accelLimit * Math.abs(distance));
 		if (distance < 0) vMax = -vMax;
 
-		// compute dv and clamp by maxAcceleration
+		// compute dv and clamp by accelLimit
 		var dv = vMax - vel;
-		var maxDv = maxAcceleration.get() * dT;
+		var maxDv = accelLimit * dT;
 		if (dv > maxDv) dv = maxDv;
 		else if (dv < -maxDv) dv = -maxDv;
-
 		vel += dv;
 
-		// clamp velocity to maxSpeed
-		var maxSpd = maxSpeed.get();
-		if (vel > maxSpd) vel = maxSpd;
-		else if (vel < -maxSpd) vel = -maxSpd;
+		// clamp velocity to speedLimit
+		if (vel > speedLimit) vel = speedLimit;
+		else if (vel < -speedLimit) vel = -speedLimit;
 
 		// integrate position
 		pos += vel * dT;
