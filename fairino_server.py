@@ -2,12 +2,13 @@ from pythonosc import dispatcher, udp_client
 from pythonosc.osc_server import ThreadingOSCUDPServer
 import threading
 import time
+import math
 from fairino import Robot
 import socket
 import struct
 from recorder import PathRecorder, ask_open_path
 from player import PathPlayer
-import random
+
 
 # --- CONFIG ---
 ROBOT_IP = "192.168.57.2"
@@ -23,6 +24,83 @@ telemetry_interval = 1.0 / telemetry_hz
 robot = Robot.RPC(ROBOT_IP)
 
 recorder = PathRecorder(save_dir="recordings")
+
+
+# --- SERVO SPEED LIMITER CONFIG ---
+# --- SERVO SPEED LIMITER CONFIG ---
+SERVO_MAX_SPEED = [140.0, 140.0, 140.0,  170.0, 170.0, 170.0]  # degrees/s  (j1-3, j4-6)
+SERVO_MAX_ACCEL = [2500.0, 2500.0, 2500.0,  2500.0, 2500.0, 2500.0]  # degrees/s²
+SERVO_DEADZONE  = 0.05  # degrees
+
+_servo_positions  = None   # [j1..j6] filtered position
+_servo_velocities = [0.0] * 6
+_servo_last_time  = None
+_latest_joint_pos = [0.0] * 6   # kept fresh by telemetry loop
+
+
+def _servo_filter(target_q: list[float]) -> list[float]:
+    """
+    Velocity- and acceleration-limited filter.
+    Mirrors the Chataigne JS filter exactly, hardcoded limits.
+    """
+    global _servo_positions, _servo_velocities, _servo_last_time
+
+    now = time.perf_counter()
+
+    # First call after (re)start: seed from real robot position
+    if _servo_positions is None:
+        _servo_positions  = list(_latest_joint_pos)
+        _servo_velocities = [0.0] * 6
+        _servo_last_time  = now
+        return list(_servo_positions)
+
+    dT = now - _servo_last_time
+    _servo_last_time = now
+
+    if dT <= 0:
+        dT = 1e-4
+
+    # Large gap protection (e.g. after pause)
+    if dT > 0.5:
+        _servo_positions  = list(target_q)
+        _servo_velocities = [0.0] * 6
+        return list(target_q)
+
+    result = []
+    for i in range(6):
+        pos    = _servo_positions[i]
+        vel    = _servo_velocities[i]
+        target = target_q[i]
+        dist   = target - pos
+
+        # Snap when close enough
+        if abs(dist) <= SERVO_DEADZONE:
+            _servo_positions[i]  = target
+            _servo_velocities[i] = 0.0
+            result.append(target)
+            continue
+
+        # Max safe velocity that allows stopping exactly at target
+        v_max = math.sqrt(2.0 * SERVO_MAX_ACCEL[i] * abs(dist))
+        if dist < 0:
+            v_max = -v_max
+
+        # Acceleration-limited velocity step
+        dv     = v_max - vel
+        max_dv = SERVO_MAX_ACCEL[i] * dT
+        dv     = max(-max_dv, min(max_dv, dv))
+        vel   += dv
+
+        # Speed clamp
+        vel = max(-SERVO_MAX_SPEED[i], min(SERVO_MAX_SPEED[i], vel))
+
+        pos += vel * dT
+
+        _servo_positions[i]  = pos
+        _servo_velocities[i] = vel
+        result.append(pos)
+
+    return result
 
 # --- MOTION HANDLERS ---
 def handle_movej(addr, *args):
@@ -79,7 +157,13 @@ def handle_jog_stop(addr):
 # --- SERVO CONTROL (Streamed Motion) ---
 
 def handle_servo_start(addr):
+    global _servo_positions, _servo_velocities, _servo_last_time
     try:
+        # Seed filter state from the live robot position
+        _servo_positions  = list(_latest_joint_pos)
+        _servo_velocities = [0.0] * 6
+        _servo_last_time  = time.perf_counter()
+
         ret = robot.ServoMoveStart()
         print(f"ServoStart: {ret if ret == 0 else f'FAILED ({ret})'}")
     except Exception as e:
@@ -92,14 +176,16 @@ def handle_servo_stop(addr):
     except Exception as e:
         print(f"ServoStop Error: {e}")
 
+
 def handle_servoj(addr, *args):
     try:
-        # Args: j1, j2, j3, j4, j5, j6
-        q = [float(x) for x in args[:6]]
-        # We use keyword args to handle the axisPos [0,0,0,0] requirement
-        # acc and vel don't work in current version of library
-        robot.ServoJ(joint_pos=q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.01, acc=50, vel=50)
-    except Exception: pass
+        target_q = [float(x) for x in args[:6]]
+        filtered_q = _servo_filter(target_q)
+        robot.ServoJ(joint_pos=filtered_q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.01, acc=50, vel=50)
+        
+    except Exception:
+        pass
+
 
 def handle_servojt_start(addr):
     try:
@@ -386,6 +472,8 @@ def telemetry_loop(osc_client):
                 
                 # Offset 8: Start of jt_cur_pos[0] (6 joints * 8 bytes)
                 joints = struct.unpack_from('<6d', packet, 8)
+                global _latest_joint_pos
+                _latest_joint_pos = list(joints)
                 
                 # Offset 56: (8 meta + 48 joints)
                 tcp_pose = struct.unpack_from('<6d', packet, 56)
@@ -509,3 +597,6 @@ print(f"Fairino Precision Bridge Active on port {OSC_LISTEN_PORT}")
 print(f"Sending telemetry to {OSC_SEND_IP}:{OSC_SEND_PORT}")
 
 server.serve_forever()
+
+
+
