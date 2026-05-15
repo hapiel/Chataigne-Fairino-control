@@ -11,9 +11,9 @@ from player import PathPlayer
 
 
 # --- CONFIG ---
-ROBOT_IP = "192.168.57.2"
+ROBOT_IP = "192.168.58.2"
 OSC_LISTEN_PORT = 9000
-OSC_SEND_IP = "192.168.57.255" 
+OSC_SEND_IP = "192.168.58.255" 
 OSC_SEND_PORT = 8000
 
 # Global telemetry control
@@ -105,20 +105,26 @@ def _servo_filter(target_q: list[float]) -> list[float]:
 # --- MOTION HANDLERS ---
 def handle_movej(addr, *args):
     try:
-        # Parse OSC arguments
         q = [float(x) for x in args[:6]]
         speed = float(args[6]) if len(args) > 6 else 20.0
-        accel = float(args[7]) if len(args) > 7 else 50.0 # Default from your docs is 0.0
-        ovl = float(args[8]) if len(args) > 8 else 100.0 # Default from your docs is 100.0
-        
-        tool = 1 # hand
-        flag = 2 # 0 doesn't work on first run
-
-        robot.MoveJ(q, tool, 0, vel=speed, acc=accel, ovl=ovl, offset_flag=flag)
-        print(f"MoveJ to {q} at speed {speed}, accel {accel}, ovl {ovl}")
-
+        accel = float(args[7]) if len(args) > 7 else 50.0
+        ovl   = float(args[8]) if len(args) > 8 else 100.0
     except Exception as e:
-        print(f"MoveJ failed: {e}")
+        print(f"MoveJ bad args: {e}")
+        return
+
+    for attempt in range(3):
+        try:
+            ret = robot.MoveJ(q, 1, 0, vel=speed, acc=accel, ovl=ovl, offset_flag=2)
+            if ret == 0:
+                print(f"MoveJ to {q} at speed {speed}, accel {accel}, ovl {ovl}")
+            else:
+                print(f"MoveJ rejected (code {ret}): {q}")
+            return
+        except Exception as e:
+            print(f"MoveJ exception (attempt {attempt + 1}): {e}")
+            time.sleep(0.005)
+
 
 def handle_movel(addr, *args):
     try:
@@ -139,12 +145,9 @@ def handle_movel(addr, *args):
         if "CannotSendRequest" not in str(e):
             print(f"MoveL failed: {e}")
 
-def handle_servo(addr, *args):
-    q = list(args[:6])
-    robot.ServoJ(q, 0, 0, 0.008, 0.1, 400)
-
 def handle_drag(addr, state):
     robot.DragTeachSwitch(int(state))
+    print("yo")
 
 def handle_jog(addr, *args):
     mode, ref, direction = args
@@ -177,14 +180,18 @@ def handle_servo_stop(addr):
         print(f"ServoStop Error: {e}")
 
 
+_servoj_last_call_time = None
+
 def handle_servoj(addr, *args):
+    global _servoj_last_call_time
     try:
-        target_q = [float(x) for x in args[:6]]
-        filtered_q = _servo_filter(target_q)
-        robot.ServoJ(joint_pos=filtered_q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.01, acc=50, vel=50)
-        
-    except Exception:
-        pass
+        now = time.perf_counter()
+        if _servoj_last_call_time is not None:
+            client.send_message("/servo/interval", 1000.0 / ((now - _servoj_last_call_time) * 1000))
+        _servoj_last_call_time = now
+        q = [float(x) for x in args[:6]]
+        robot.ServoJ(joint_pos=q, axisPos=[0.0, 0.0, 0.0, 0.0], cmdT=0.01, acc=50, vel=50)
+    except Exception: pass
 
 
 def handle_servojt_start(addr):
@@ -241,7 +248,13 @@ def handle_servojt(addr, *args):
     
     
 # --- STOP PAUSE RESUME ---
-    
+
+# Prevents thread pile-up: send_message (port 8080) has no timeout, so a single
+# slow response blocks a thread for ~21s. With a threaded OSC server, rapid
+# Pause/Resume bursts spawn many blocked threads that exhaust the robot's
+# connection queue and cause cascading failures until the script is restarted.
+_port8080_lock = threading.Lock()
+
 def handle_stop(addr):
     try:
         ret = robot.StopMotion()
@@ -249,22 +262,32 @@ def handle_stop(addr):
             print("Motion stopped")
         else:
             print(f"StopMotion failed with code: {ret}")
-    except Exception as e:
+    except Exception:
         print(f"StopMotion never works on the first try... (weird error)")
 
 def handle_pause(addr):
-    ret = robot.PauseMotion()
-    if ret == 0:
-        print("Motion Paused")
-    else:
-        print(f"PauseMotion failed with code: {ret}")
+    if not _port8080_lock.acquire(blocking=False):
+        return
+    try:
+        ret = robot.PauseMotion()
+        if ret == 0:
+            print("Motion Paused")
+        else:
+            print(f"PauseMotion failed with code: {ret}")
+    finally:
+        _port8080_lock.release()
 
 def handle_resume(addr):
-    ret = robot.ResumeMotion()
-    if ret == 0:
-        print("Motion Resumed")
-    else:
-        print(f"ResumeMotion failed with code: {ret}")
+    if not _port8080_lock.acquire(blocking=False):
+        return
+    try:
+        ret = robot.ResumeMotion()
+        if ret == 0:
+            print("Motion Resumed")
+        else:
+            print(f"ResumeMotion failed with code: {ret}")
+    finally:
+        _port8080_lock.release()
 
 def handle_clear_error(addr):
     ret = robot.ResetAllError()
@@ -409,7 +432,7 @@ class UniqueUpdateTracker:
 
 # --- TELEMETRY LOOP ---
 def telemetry_loop(osc_client):
-    ROBOT_IP = "192.168.57.2"
+    ROBOT_IP = "192.168.58.2"
     PORT = 8083
     
     # Initialize the tracker
@@ -543,7 +566,6 @@ def polling_loop(osc_client):
 disp = dispatcher.Dispatcher()
 disp.map("/movej", handle_movej)
 disp.map("/movel", handle_movel)
-disp.map("/servo", handle_servo)
 disp.map("/drag", handle_drag)
 disp.map("/jog", handle_jog)
 disp.map("/jog_stop", handle_jog_stop)

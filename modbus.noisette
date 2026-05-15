@@ -1,0 +1,528 @@
+{
+  "metaData": {
+    "version": "1.10.3",
+    "versionNumber": 68099
+  },
+  "projectSettings": {
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          },
+          {
+            "value": true,
+            "controlAddress": "/enableDashboardServer"
+          },
+          {
+            "value": 9999,
+            "hexMode": false,
+            "controlAddress": "/serverPort"
+          }
+        ]
+      },
+      "customDefinitions": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/editMode"
+      },
+      {
+        "value": false,
+        "controlAddress": "/snapping"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1718,
+      "height": 1340,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1718,
+          "height": 1340,
+          "direction": 2,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1718,
+              "height": 794,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 314,
+                  "height": 794,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 314,
+                      "height": 425,
+                      "currentContent": "Modules",
+                      "tabs": [
+                        {
+                          "name": "Modules"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 314,
+                      "height": 363,
+                      "currentContent": "Custom Variables",
+                      "tabs": [
+                        {
+                          "name": "Custom Variables"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 967,
+                  "height": 794,
+                  "currentContent": "State Machine",
+                  "tabs": [
+                    {
+                      "name": "State Machine"
+                    },
+                    {
+                      "name": "Dashboard"
+                    },
+                    {
+                      "name": "Module Router"
+                    },
+                    {
+                      "name": "Morpher"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 425,
+                  "height": 794,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 1718,
+              "height": 540,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 266,
+                  "height": 540,
+                  "currentContent": "Sequences",
+                  "tabs": [
+                    {
+                      "name": "Sequences"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 1149,
+                  "height": 540,
+                  "currentContent": "Sequence Editor",
+                  "tabs": [
+                    {
+                      "name": "Sequence Editor"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 291,
+                  "height": 540,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Help"
+                    },
+                    {
+                      "name": "Logger"
+                    },
+                    {
+                      "name": "Warnings"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "modules": {
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          }
+        ],
+        "niceName": "Modbus TCP Daniel",
+        "type": "Modbus TCP Daniel",
+        "scripts": {
+          "items": [
+            {
+              "niceName": "Modbus-TCP",
+              "type": "BaseItem",
+              "scriptParams": {
+                "hideInEditor": true
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": "Raw",
+              "controlAddress": "/protocol"
+            },
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": "1 value per byte",
+              "controlAddress": "/messageStructure"
+            },
+            {
+              "value": "|",
+              "controlAddress": "/customSeparator"
+            },
+            {
+              "value": true,
+              "controlAddress": "/firstValueIsTheName"
+            }
+          ],
+          "containers": {
+            "output": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/local"
+                },
+                {
+                  "value": "192.168.58.2",
+                  "controlAddress": "/remoteHost"
+                },
+                {
+                  "value": 502,
+                  "hexMode": false,
+                  "controlAddress": "/remotePort"
+                }
+              ]
+            },
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "latestError": {
+              "parameters": [
+                {
+                  "value": 16,
+                  "hexMode": true,
+                  "controlAddress": "/latestInvalidCommand"
+                },
+                {
+                  "value": 2,
+                  "hexMode": true,
+                  "controlAddress": "/latestErrorCode"
+                },
+                {
+                  "value": "ILLEGAL DATA ADDRESS",
+                  "controlAddress": "/latestErrorMessage"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "customVariables": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "states": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/snapGridMode"
+      },
+      {
+        "value": false,
+        "controlAddress": "/showSnapGrid"
+      },
+      {
+        "value": 13,
+        "hexMode": false,
+        "controlAddress": "/snapGridSize"
+      }
+    ],
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": [
+              715.0,
+              650.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "State",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Mapping",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": 0.7555555105209351,
+                        "minValue": -1,
+                        "maxValue": 1,
+                        "default": 0.0,
+                        "controlAddress": "/newFloatParameter"
+                      }
+                    ],
+                    "niceName": "Input Float",
+                    "type": "Input Float"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 20,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/forceContinuousProcess"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/sendOnInputChangeOnly"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/sendOnOutputChangeOnly"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "modbusTCPDaniel",
+                    "commandPath": "",
+                    "commandType": "Write holding register",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": 0,
+                          "hexMode": false,
+                          "controlAddress": "/unitID"
+                        },
+                        {
+                          "value": 100,
+                          "hexMode": false,
+                          "controlAddress": "/registerAddress"
+                        },
+                        {
+                          "value": 37,
+                          "hexMode": false,
+                          "controlAddress": "/value"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "modbusTCPDaniel",
+                    "commandPath": "",
+                    "commandType": "Write holding register (float)",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": 131,
+                          "hexMode": false,
+                          "controlAddress": "/registerAddress"
+                        },
+                        {
+                          "value": "Mid-little-endian (CDAB)",
+                          "controlAddress": "/byteOrder"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              741.9779663085938,
+              882.6373291015625
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "State 1",
+        "type": "State",
+        "processors": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      -736,
+      -785
+    ],
+    "viewZoom": 1.0,
+    "transitions": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "comments": {
+      "hideInEditor": true,
+      "viewOffset": [
+        -736,
+        -785
+      ],
+      "viewZoom": 1.0
+    }
+  },
+  "sequences": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "routers": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}

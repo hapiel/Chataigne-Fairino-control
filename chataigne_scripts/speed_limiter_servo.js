@@ -32,11 +32,34 @@ var targetDeadzone = script.addFloatParameter(
 	0.05, 0, 1
 );
 
+var triggerInstant = script.addTrigger("Set Instant", "Bypasses the filter for one frame and resets internal state to the current input");
+
 var previousInputs = [];
 var velocities = [];
 var lastTime = -1;
+var forceInstant = false;
+
+function scriptParameterChanged(param) {
+	if (param.is(triggerInstant)) {
+		forceInstant = true;
+	}
+}
 
 function filter(inputs, minValues, maxValues, multiplexIndex) {
+	if (forceInstant) {
+		forceInstant = false;
+		lastTime = util.getTime();
+		previousInputs = [];
+		velocities = [];
+		var result = [];
+		for (var j = 0; j < inputs.length; j++) {
+			previousInputs[j] = inputs[j];
+			velocities[j] = 0;
+			result[j] = inputs[j];
+		}
+		return result;
+	}
+
 	var nowMs = util.getTime();
 
 	var dT;
